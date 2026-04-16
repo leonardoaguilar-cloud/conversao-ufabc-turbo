@@ -1,0 +1,309 @@
+import { LucideIcon } from "lucide-react";
+
+export interface ServiceData {
+  id: string;
+  tab: string;
+  eyebrow: string;
+  Icon: LucideIcon;
+  hero: {
+    headline: string;
+    subheadline: string;
+  };
+  problem: {
+    headline: string;
+    pains: { text: string }[];
+  };
+  solution: {
+    eyebrow: string;
+    headline: string;
+    description: string;
+    steps: { title: string; description: string }[];
+  };
+  benefits: {
+    eyebrow: string;
+    headline: string;
+    items: { title: string; description: string; Icon: LucideIcon }[];
+  };
+  cases: {
+    client: string;
+    segment: string;
+    result: string;
+    metric: string;
+    quote: string;
+  }[];
+  cta: {
+    headline: string;
+    subheadline: string;
+  };
+}
+
+import {
+  Workflow, Map, Target, BarChart3, Zap, Clock, Users, TrendingUp, Compass, Eye, Lightbulb, Shield,
+  Database, LineChart, Sparkles, Gauge, Search, Layers, Brain,
+} from "lucide-react";
+
+export const services: ServiceData[] = [
+  // ============ MAPEAMENTO DE PROCESSOS ============
+  {
+    id: "processos",
+    tab: "Mapeamento de Processos",
+    eyebrow: "Serviço 01 — Operação",
+    Icon: Workflow,
+    hero: {
+      headline: "Seus processos estão travando seu crescimento — sem você perceber.",
+      subheadline:
+        "Mapeamos, redesenhamos e documentamos a operação da sua empresa para você parar de apagar incêndio e voltar a crescer com previsibilidade.",
+    },
+    problem: {
+      headline: "Você sente que sua equipe corre o dia todo, mas o negócio não anda.",
+      pains: [
+        { text: "Tarefas que dependem de uma única pessoa, e tudo trava quando ela falta." },
+        { text: "Cada cliente é atendido de um jeito — qualidade depende de quem está no plantão." },
+        { text: "Retrabalho constante porque ninguém sabe exatamente onde uma etapa começa e a outra termina." },
+        { text: "Dificuldade para treinar novos colaboradores: o conhecimento mora na cabeça das pessoas." },
+        { text: "Crescimento parou porque escalar significaria multiplicar o caos." },
+        { text: "Você é o gargalo de praticamente todas as decisões." },
+      ],
+    },
+    solution: {
+      eyebrow: "Como resolvemos",
+      headline: "Transformamos bagunça em método em 4 passos.",
+      description:
+        "Aplicamos metodologias da engenharia (BPMN, Lean, SIPOC) para enxergar sua operação de fora — e devolvemos um manual claro de como ela deveria funcionar.",
+      steps: [
+        {
+          title: "Diagnóstico imersivo",
+          description: "Entrevistas com sua equipe e observação direta para entender como o trabalho realmente acontece — não como deveria acontecer no papel.",
+        },
+        {
+          title: "Mapeamento AS-IS",
+          description: "Desenhamos o fluxo atual em notação BPMN, identificando gargalos, retrabalhos e pontos cegos que custam tempo e dinheiro.",
+        },
+        {
+          title: "Redesenho TO-BE",
+          description: "Propomos a versão otimizada do processo, com responsáveis claros, indicadores de performance e pontos de automação.",
+        },
+        {
+          title: "Documentação e implantação",
+          description: "Entregamos manuais, POPs e treinamentos para que a operação rode mesmo sem você no meio dela.",
+        },
+      ],
+    },
+    benefits: {
+      eyebrow: "O que você ganha",
+      headline: "Operação fluida, time autônomo, dono livre.",
+      items: [
+        { title: "Reduz custo operacional", description: "Identificamos atividades sem valor que somam até 30% do tempo da equipe.", Icon: TrendingUp },
+        { title: "Acelera o tempo de entrega", description: "Processos enxutos entregam mais rápido com a mesma equipe.", Icon: Zap },
+        { title: "Equipe destravada", description: "Cada pessoa sabe exatamente o que fazer, quando e como.", Icon: Users },
+        { title: "Pronto para escalar", description: "Sua operação aguenta dobrar de tamanho sem dobrar o caos.", Icon: TrendingUp },
+        { title: "Onboarding 3x mais rápido", description: "Novos contratados produzem em semanas, não meses.", Icon: Clock },
+        { title: "Decisões fora do operacional", description: "Você volta a olhar pra estratégia em vez de apagar incêndios.", Icon: Compass },
+      ],
+    },
+    cases: [
+      {
+        client: "Empresa de Logística",
+        segment: "Transporte · 45 funcionários",
+        result: "Reduziu o tempo de despacho em 42% após o redesenho dos fluxos operacionais.",
+        metric: "-42%",
+        quote: "Saímos do achismo. Hoje cada etapa tem dono e prazo. Isso mudou tudo.",
+      },
+      {
+        client: "Indústria Alimentícia",
+        segment: "Produção · ABC Paulista",
+        result: "Aumento de 28% na produtividade do chão de fábrica em 90 dias.",
+        metric: "+28%",
+        quote: "A UFABC Jr. trouxe um olhar técnico que nossa equipe interna não tinha.",
+      },
+      {
+        client: "Clínica de Saúde",
+        segment: "Saúde · Multi-unidades",
+        result: "Padronizou atendimento entre 3 unidades e elevou NPS de 52 para 81.",
+        metric: "+29 NPS",
+        quote: "Hoje qualquer unidade nossa entrega o mesmo nível de serviço. Antes era loteria.",
+      },
+    ],
+    cta: {
+      headline: "Vamos achar onde sua operação está vazando dinheiro.",
+      subheadline:
+        "Em 30 minutos, identificamos os 3 maiores gargalos da sua operação e te entregamos um mini-plano de ação. Sem custo, sem compromisso.",
+    },
+  },
+
+  // ============ ANÁLISE DE MERCADO ============
+  {
+    id: "mercado",
+    tab: "Análise de Mercado",
+    eyebrow: "Serviço 02 — Estratégia",
+    Icon: Target,
+    hero: {
+      headline: "Você está tomando decisões sem dados de mercado confiáveis.",
+      subheadline:
+        "Pesquisas estruturadas de mercado, concorrência e cliente para você parar de apostar no escuro e começar a crescer com convicção.",
+    },
+    problem: {
+      headline: "Decidir sem dados é caro — e você só percebe quando o prejuízo aparece.",
+      pains: [
+        { text: "Lançou um produto que parecia perfeito — e o mercado não respondeu como esperado." },
+        { text: "Não sabe ao certo quem é seu cliente ideal nem por que ele compra (ou desiste)." },
+        { text: "Concorrência crescendo mais rápido e você não entende exatamente o que estão fazendo de diferente." },
+        { text: "Está pensando em entrar em um novo mercado, mas não tem ideia do tamanho real da oportunidade." },
+        { text: "Marketing gastando alto em canais que não trazem o cliente certo." },
+        { text: "Decisões de preço, posicionamento e canal feitas no 'achismo do dono'." },
+      ],
+    },
+    solution: {
+      eyebrow: "Como resolvemos",
+      headline: "Pesquisa de mercado feita por quem ainda acredita em rigor.",
+      description:
+        "Combinamos pesquisa quantitativa, entrevistas de profundidade e análise competitiva para te entregar um retrato claro do seu mercado — e o que fazer com ele.",
+      steps: [
+        {
+          title: "Briefing estratégico",
+          description: "Entendemos suas hipóteses, decisões em jogo e o que precisa ser respondido para você agir com confiança.",
+        },
+        {
+          title: "Pesquisa de campo",
+          description: "Aplicamos surveys, conduzimos entrevistas qualitativas e mapeamos toda a concorrência relevante do seu setor.",
+        },
+        {
+          title: "Análise e cruzamento",
+          description: "Transformamos dados brutos em insights acionáveis: personas, oportunidades, ameaças e benchmarks.",
+        },
+        {
+          title: "Relatório executivo",
+          description: "Apresentação clara, com recomendações práticas — não um PDF de 200 páginas que ninguém lê.",
+        },
+      ],
+    },
+    benefits: {
+      eyebrow: "O que você ganha",
+      headline: "Decisões com lastro. Marketing com pontaria. Estratégia com chão.",
+      items: [
+        { title: "Cliente ideal mapeado", description: "Personas reais com dores, gatilhos e jornada de compra documentadas.", Icon: Users },
+        { title: "Concorrência radiografada", description: "Posicionamento, pricing, canais e pontos vulneráveis do seu mercado.", Icon: Eye },
+        { title: "Tamanho do mercado (TAM/SAM/SOM)", description: "Saiba exatamente onde estão R$ X milhões de oportunidade real.", Icon: Target },
+        { title: "Posicionamento afiado", description: "Mensagem que conecta porque parte do que o cliente realmente quer ouvir.", Icon: Compass },
+        { title: "Validação antes de investir", description: "Teste hipóteses ANTES de gastar com produto, marketing ou expansão.", Icon: Shield },
+        { title: "Insights novos toda semana", description: "Você sai da pesquisa enxergando seu negócio de um jeito novo.", Icon: Lightbulb },
+      ],
+    },
+    cases: [
+      {
+        client: "Startup de Educação",
+        segment: "Edtech · Pré-Series A",
+        result: "Identificou nicho desatendido e cresceu MRR em 3x após repivotar posicionamento.",
+        metric: "3x MRR",
+        quote: "A pesquisa nos mostrou que estávamos vendendo pra quem não comprava. Mudou nosso jogo.",
+      },
+      {
+        client: "Marca de Cosméticos",
+        segment: "DTC · E-commerce",
+        result: "Reduziu CAC em 38% ao reposicionar para a persona correta identificada no estudo.",
+        metric: "-38% CAC",
+        quote: "Paramos de gastar com público errado. ROAS dobrou no primeiro mês.",
+      },
+      {
+        client: "Indústria B2B",
+        segment: "Equipamentos · Nacional",
+        result: "Validou entrada em novo mercado regional com projeção de R$ 8M em 12 meses.",
+        metric: "R$ 8M",
+        quote: "Tínhamos medo de errar a entrada. A análise nos deu segurança para investir alto.",
+      },
+    ],
+    cta: {
+      headline: "Pare de apostar. Comece a saber.",
+      subheadline:
+        "Em uma conversa de 30 minutos, mapeamos as 3 perguntas estratégicas mais críticas do seu negócio hoje — e te mostramos como respondê-las com dados.",
+    },
+  },
+
+  // ============ ANÁLISE DE DADOS ============
+  {
+    id: "dados",
+    tab: "Análise de Dados",
+    eyebrow: "Serviço 03 — Inteligência",
+    Icon: BarChart3,
+    hero: {
+      headline: "Você tem dados, mas não consegue transformá-los em decisão.",
+      subheadline:
+        "Estruturamos, analisamos e visualizamos os dados da sua empresa para que cada decisão deixe de ser palpite e passe a ser evidência.",
+    },
+    problem: {
+      headline: "Dados acumulados em planilhas não geram valor — geram ansiedade.",
+      pains: [
+        { text: "Tem planilhas espalhadas em vários setores e ninguém sabe qual versão é a verdadeira." },
+        { text: "Relatórios manuais consomem horas por semana e ainda chegam atrasados." },
+        { text: "Não consegue prever vendas, churn ou demanda com nenhum nível de precisão." },
+        { text: "Sente que poderia tomar decisões melhores se enxergasse os dados — mas eles estão dispersos e crus." },
+        { text: "Investiu em sistema (ERP, CRM) mas usa só 10% do que ele oferece em informação." },
+        { text: "Reuniões viram debate de opinião porque não há dado em comum sobre a mesa." },
+      ],
+    },
+    solution: {
+      eyebrow: "Como resolvemos",
+      headline: "Do caos de planilhas ao dashboard que decide por você.",
+      description:
+        "Conectamos suas fontes de dados, modelamos as informações e construímos painéis interativos que mostram o que importa — quando importa.",
+      steps: [
+        {
+          title: "Auditoria de dados",
+          description: "Mapeamos todas as fontes, qualidade e lacunas dos dados que sua empresa já gera (e dos que deveria estar gerando).",
+        },
+        {
+          title: "Estruturação e ETL",
+          description: "Limpamos, integramos e organizamos as bases para que toda análise futura parta de uma fonte confiável e única.",
+        },
+        {
+          title: "Análise estatística",
+          description: "Usamos estatística e modelos preditivos para responder perguntas de negócio: o que está acontecendo, por quê e o que vem a seguir.",
+        },
+        {
+          title: "Dashboards e capacitação",
+          description: "Entregamos painéis vivos (Power BI, Looker ou similares) e treinamos seu time para ler e agir sobre eles.",
+        },
+      ],
+    },
+    benefits: {
+      eyebrow: "O que você ganha",
+      headline: "Visibilidade total. Reação rápida. Previsão real.",
+      items: [
+        { title: "Dashboards em tempo real", description: "KPIs do negócio em um único lugar, atualizados automaticamente.", Icon: Gauge },
+        { title: "Previsões confiáveis", description: "Modelos estatísticos para vendas, demanda, churn e estoque.", Icon: LineChart },
+        { title: "Fonte única da verdade", description: "Acabou debate sobre 'qual é o número certo' nas reuniões.", Icon: Database },
+        { title: "Insights ocultos revelados", description: "Cruzamentos que sua equipe nunca teve tempo de fazer.", Icon: Search },
+        { title: "Time data-driven", description: "Capacitação para que sua equipe pense com dados no dia a dia.", Icon: Brain },
+        { title: "Decisão em horas, não semanas", description: "Pergunta de manhã, resposta com gráfico à tarde.", Icon: Sparkles },
+      ],
+    },
+    cases: [
+      {
+        client: "Varejo Multicanal",
+        segment: "Moda · 12 lojas",
+        result: "Reduziu ruptura de estoque em 47% com modelo preditivo de demanda por SKU.",
+        metric: "-47%",
+        quote: "Hoje compramos o que vai vender, não o que achamos que vai. Diferença brutal no caixa.",
+      },
+      {
+        client: "SaaS B2B",
+        segment: "Software · 800 contas",
+        result: "Identificou clientes em risco de churn 60 dias antes — e reteve 73% deles.",
+        metric: "73% retidos",
+        quote: "Antes a gente descobria churn na fatura. Agora a gente age antes do cliente decidir sair.",
+      },
+      {
+        client: "Rede de Restaurantes",
+        segment: "Food Service · 6 unidades",
+        result: "Aumentou ticket médio em 18% com análise comportamental de pedidos.",
+        metric: "+18% ticket",
+        quote: "Os dados mostraram combinações de produto que nunca tínhamos pensado em sugerir.",
+      },
+    ],
+    cta: {
+      headline: "Seus dados já têm a resposta. Falta organizá-los.",
+      subheadline:
+        "Em 30 minutos, identificamos as 3 perguntas de negócio mais valiosas que seus dados atuais podem responder — e te mostramos como.",
+    },
+  },
+];
