@@ -40,7 +40,7 @@ const Index = () => {
               Empresas que confiaram nos nossos consultores
             </div>
             <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-3 opacity-60">
-              {["Volkswagen", "Natura", "Embraer", "Banco BV", "Magazine Luiza", "Stefanini", "Suzano"].map((n) => (
+              {["Continental", "Samsung", "Renova Energia", "FARO FOOD", "KAP"].map((n) => (
                 <span key={n} className="font-display text-xl md:text-2xl font-medium tracking-tight text-ink">
                   {n}
                 </span>
