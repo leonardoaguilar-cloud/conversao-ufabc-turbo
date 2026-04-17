@@ -28,7 +28,7 @@ export const Hero = ({ onScrollToServices }: HeroProps) => {
           className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-card border border-border text-xs font-medium text-muted-foreground mb-8"
         >
           <Sparkles className="w-3.5 h-3.5 text-lime" strokeWidth={2.5} />
-          Empresa Júnior da UFABC · +120 projetos entregues
+          Empresa Júnior da UFABC · +200 projetos entregues
         </motion.div>
 
         <motion.h1
@@ -73,10 +73,10 @@ export const Hero = ({ onScrollToServices }: HeroProps) => {
           className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 max-w-3xl pt-10 border-t border-border"
         >
           {[
-            { value: "+120", label: "projetos entregues" },
-            { value: "98%", label: "satisfação dos clientes" },
-            { value: "8 anos", label: "no mercado" },
-            { value: "R$ 2M+", label: "gerados a clientes" },
+            { value: "+200", label: "projetos entregues" },
+            { value: "+170", label: "clientes atendidos" },
+            { value: "14+ anos", label: "no mercado" },
+            { value: "97% / 95%", label: "NPS / CSAT" },
           ].map((s, i) => (
             <div key={i}>
               <div className="font-display text-3xl md:text-4xl font-semibold tracking-tight">{s.value}</div>
