@@ -152,9 +152,13 @@ const Index = () => {
                 </h2>
                 <p className="mt-6 text-lg text-paper/70 max-w-2xl leading-relaxed">
                   Somos consultores em formação na Universidade Federal do ABC — uma das universidades mais bem ranqueadas do Brasil.
-                  Aplicamos rigor acadêmico, ferramentas atualizadas e olhar de fora para entregar resultado de mercado a um custo
-                  que startups e PMEs conseguem absorver.
+                  Há mais de 14 anos no mercado, aplicamos rigor acadêmico, ferramentas atualizadas e olhar de fora para entregar
+                  resultado de mercado a um custo que startups e PMEs conseguem absorver.
                 </p>
+                <div className="mt-6 inline-flex items-center gap-3 rounded-full border border-lime/30 bg-lime/10 px-4 py-2 text-sm text-lime">
+                  <span className="font-display font-semibold">4x</span>
+                  <span className="text-paper/80">Empresa Júnior de Alto Impacto — reconhecimento consecutivo</span>
+                </div>
               </div>
               <div className="md:col-span-4 grid grid-cols-2 gap-6">
                 <div>
@@ -166,12 +170,12 @@ const Index = () => {
                   <div className="text-xs text-paper/60 uppercase tracking-wider mt-1">clientes atendidos</div>
                 </div>
                 <div>
-                  <div className="font-display text-3xl font-semibold text-lime">97%</div>
-                  <div className="text-xs text-paper/60 uppercase tracking-wider mt-1">NPS</div>
+                  <div className="font-display text-3xl font-semibold text-lime">14+</div>
+                  <div className="text-xs text-paper/60 uppercase tracking-wider mt-1">anos de mercado</div>
                 </div>
                 <div>
-                  <div className="font-display text-3xl font-semibold text-lime">95%</div>
-                  <div className="text-xs text-paper/60 uppercase tracking-wider mt-1">CSAT</div>
+                  <div className="font-display text-3xl font-semibold text-lime">97%</div>
+                  <div className="text-xs text-paper/60 uppercase tracking-wider mt-1">NPS</div>
                 </div>
               </div>
             </div>
