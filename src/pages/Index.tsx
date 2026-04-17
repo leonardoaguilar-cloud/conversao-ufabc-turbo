@@ -158,20 +158,20 @@ const Index = () => {
               </div>
               <div className="md:col-span-4 grid grid-cols-2 gap-6">
                 <div>
-                  <div className="font-display text-3xl font-semibold text-lime">+120</div>
+                  <div className="font-display text-3xl font-semibold text-lime">+200</div>
                   <div className="text-xs text-paper/60 uppercase tracking-wider mt-1">projetos</div>
                 </div>
                 <div>
-                  <div className="font-display text-3xl font-semibold text-lime">8</div>
-                  <div className="text-xs text-paper/60 uppercase tracking-wider mt-1">anos atuando</div>
+                  <div className="font-display text-3xl font-semibold text-lime">+170</div>
+                  <div className="text-xs text-paper/60 uppercase tracking-wider mt-1">clientes atendidos</div>
                 </div>
                 <div>
-                  <div className="font-display text-3xl font-semibold text-lime">98%</div>
-                  <div className="text-xs text-paper/60 uppercase tracking-wider mt-1">satisfação</div>
+                  <div className="font-display text-3xl font-semibold text-lime">97%</div>
+                  <div className="text-xs text-paper/60 uppercase tracking-wider mt-1">NPS</div>
                 </div>
                 <div>
-                  <div className="font-display text-3xl font-semibold text-lime">35+</div>
-                  <div className="text-xs text-paper/60 uppercase tracking-wider mt-1">consultores</div>
+                  <div className="font-display text-3xl font-semibold text-lime">95%</div>
+                  <div className="text-xs text-paper/60 uppercase tracking-wider mt-1">CSAT</div>
                 </div>
               </div>
             </div>
