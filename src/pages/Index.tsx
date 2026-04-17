@@ -1,22 +1,32 @@
-import { useState, useRef } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { useRef } from "react";
+import { motion } from "framer-motion";
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
-import { ServiceHero } from "@/components/sections/ServiceHero";
-import { ProblemSection } from "@/components/sections/ProblemSection";
-import { SolutionSection } from "@/components/sections/SolutionSection";
-import { BenefitsSection } from "@/components/sections/BenefitsSection";
-import { SocialProofSection } from "@/components/sections/SocialProofSection";
-import { CTASection } from "@/components/sections/CTASection";
+import { ServicePreviewCard } from "@/components/sections/ServicePreviewCard";
 import { services } from "@/data/services";
-import { ArrowUpRight } from "lucide-react";
+
+// Quick highlights shown on each preview card (curated from each service's benefits)
+const previewHighlights: Record<string, string[]> = {
+  processos: [
+    "Mapeamento BPMN da operação atual",
+    "Redesenho enxuto com responsáveis e KPIs",
+    "POPs e treinamento da equipe",
+  ],
+  mercado: [
+    "Pesquisa quantitativa e qualitativa",
+    "Personas, concorrência e TAM/SAM/SOM",
+    "Relatório executivo com recomendações",
+  ],
+  dados: [
+    "Integração e limpeza de fontes",
+    "Modelos preditivos e estatísticos",
+    "Dashboards interativos em tempo real",
+  ],
+};
 
 const Index = () => {
-  const [activeTab, setActiveTab] = useState(services[0].id);
   const servicesRef = useRef<HTMLDivElement>(null);
   const ctaRef = useRef<HTMLDivElement>(null);
-
-  const active = services.find((s) => s.id === activeTab) ?? services[0];
 
   const scrollToServices = () => {
     servicesRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -49,15 +59,15 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Services intro + Tabs */}
-        <section id="servicos" ref={servicesRef} className="pt-24 md:pt-32">
+        {/* Services intro + preview cards */}
+        <section id="servicos" ref={servicesRef} className="py-24 md:py-32">
           <div className="container max-w-6xl">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
               transition={{ duration: 0.6 }}
-              className="max-w-3xl mb-12"
+              className="max-w-3xl mb-14"
             >
               <div className="flex items-center gap-2 text-sm uppercase tracking-[0.2em] text-muted-foreground mb-6">
                 <span className="h-px w-8 bg-foreground/30" />
@@ -66,77 +76,28 @@ const Index = () => {
               <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-medium leading-[1.0] text-balance">
                 Três frentes. <em className="italic text-muted-foreground">Um único objetivo:</em> destravar seu crescimento.
               </h2>
+              <p className="mt-6 text-lg text-muted-foreground max-w-2xl leading-relaxed">
+                Escolha o serviço que mais conversa com o momento da sua empresa. Cada um tem sua própria página com diagnóstico, método, benefícios e cases.
+              </p>
             </motion.div>
 
-            {/* Tabs */}
-            <div className="flex flex-wrap gap-2 p-1.5 bg-card rounded-2xl border border-border shadow-card sticky top-20 z-30 backdrop-blur">
-              {services.map((s) => {
-                const isActive = activeTab === s.id;
-                return (
-                  <button
-                    key={s.id}
-                    onClick={() => setActiveTab(s.id)}
-                    className={`relative flex-1 min-w-[180px] flex items-center gap-3 px-4 md:px-6 py-3.5 rounded-xl text-sm md:text-base font-medium transition-all ${
-                      isActive
-                        ? "text-paper"
-                        : "text-foreground/70 hover:text-foreground hover:bg-secondary/60"
-                    }`}
-                  >
-                    {isActive && (
-                      <motion.div
-                        layoutId="active-tab"
-                        className="absolute inset-0 bg-ink rounded-xl shadow-card"
-                        transition={{ type: "spring", stiffness: 350, damping: 30 }}
-                      />
-                    )}
-                    <s.Icon className="w-4 h-4 relative z-10 shrink-0" strokeWidth={1.75} />
-                    <span className="relative z-10 text-left">{s.tab}</span>
-                    {isActive && <ArrowUpRight className="w-4 h-4 relative z-10 ml-auto text-lime" />}
-                  </button>
-                );
-              })}
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
+              {services.map((s, i) => (
+                <ServicePreviewCard
+                  key={s.id}
+                  index={i}
+                  id={s.id}
+                  eyebrow={s.eyebrow}
+                  tab={s.tab}
+                  Icon={s.Icon}
+                  headline={s.hero.headline}
+                  subheadline={s.hero.subheadline}
+                  highlights={previewHighlights[s.id] ?? []}
+                />
+              ))}
             </div>
           </div>
         </section>
-
-        {/* Active service content */}
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={active.id}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -10 }}
-            transition={{ duration: 0.4 }}
-          >
-            <ServiceHero
-              eyebrow={active.eyebrow}
-              headline={active.hero.headline}
-              subheadline={active.hero.subheadline}
-              Icon={active.Icon}
-            />
-            <ProblemSection headline={active.problem.headline} pains={active.problem.pains} />
-            <SolutionSection
-              eyebrow={active.solution.eyebrow}
-              headline={active.solution.headline}
-              description={active.solution.description}
-              steps={active.solution.steps}
-              Icon={active.Icon}
-            />
-            <BenefitsSection
-              eyebrow={active.benefits.eyebrow}
-              headline={active.benefits.headline}
-              benefits={active.benefits.items}
-            />
-            <SocialProofSection cases={active.cases} />
-            <div id="contato" ref={active.id === activeTab ? ctaRef : undefined}>
-              <CTASection
-                service={active.tab}
-                headline={active.cta.headline}
-                subheadline={active.cta.subheadline}
-              />
-            </div>
-          </motion.div>
-        </AnimatePresence>
 
         {/* About / Footer band */}
         <section id="sobre" className="bg-ink text-paper py-20 md:py-28 grain relative overflow-hidden">
@@ -182,7 +143,7 @@ const Index = () => {
           </div>
         </section>
 
-        <footer className="bg-ink text-paper/60 border-t border-paper/10 py-10">
+        <footer id="contato" ref={ctaRef} className="bg-ink text-paper/60 border-t border-paper/10 py-10">
           <div className="container max-w-6xl flex flex-col md:flex-row items-center justify-between gap-4 text-sm">
             <div className="flex items-center gap-2">
               <div className="w-8 h-8 rounded-md bg-lime text-ink flex items-center justify-center font-display font-bold">U</div>
