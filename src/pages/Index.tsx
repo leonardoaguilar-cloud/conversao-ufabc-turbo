@@ -122,7 +122,7 @@ const Index = () => {
                   <span className="text-paper/80">Empresa Júnior de Alto Impacto — reconhecimento consecutivo</span>
                 </div>
               </div>
-              <div className="md:col-span-4 grid grid-cols-2 gap-6">
+              <div className="md:col-span-4 grid grid-cols-2 gap-x-6 gap-y-5">
                 <div>
                   <div className="font-display text-3xl font-semibold text-lime">+200</div>
                   <div className="text-xs text-paper/60 uppercase tracking-wider mt-1">projetos</div>
@@ -138,6 +138,10 @@ const Index = () => {
                 <div>
                   <div className="font-display text-3xl font-semibold text-lime">97%</div>
                   <div className="text-xs text-paper/60 uppercase tracking-wider mt-1">NPS</div>
+                </div>
+                <div className="col-span-2">
+                  <div className="font-display text-3xl font-semibold text-lime">95%</div>
+                  <div className="text-xs text-paper/60 uppercase tracking-wider mt-1">CSAT</div>
                 </div>
               </div>
             </div>
