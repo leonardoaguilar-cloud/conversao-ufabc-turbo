@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { ServicePreviewCard } from "@/components/sections/ServicePreviewCard";
+import { ContactSection } from "@/components/sections/ContactSection";
 import { services } from "@/data/services";
 
 // Quick highlights shown on each preview card (curated from each service's benefits)
@@ -143,7 +144,11 @@ const Index = () => {
           </div>
         </section>
 
-        <footer id="contato" ref={ctaRef} className="bg-ink text-paper/60 border-t border-paper/10 py-10">
+        <div ref={ctaRef}>
+          <ContactSection />
+        </div>
+
+        <footer className="bg-ink text-paper/60 border-t border-paper/10 py-10">
           <div className="container max-w-6xl flex flex-col md:flex-row items-center justify-between gap-4 text-sm">
             <div className="flex items-center gap-2">
               <div className="w-8 h-8 rounded-md bg-lime text-ink flex items-center justify-center font-display font-bold">U</div>
