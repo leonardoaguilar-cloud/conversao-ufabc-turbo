@@ -69,16 +69,16 @@ const Index = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
               transition={{ duration: 0.6 }}
-              className="max-w-3xl mb-14"
+              className="max-w-3xl mx-auto mb-14 text-center"
             >
-              <div className="flex items-center gap-2 text-sm uppercase tracking-[0.2em] text-muted-foreground mb-6">
+              <div className="flex items-center justify-center gap-2 text-sm uppercase tracking-[0.2em] text-muted-foreground mb-6">
                 <span className="h-px w-8 bg-foreground/30" />
                 Nossos serviços
               </div>
               <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-medium leading-[1.0] text-balance">
                 Três frentes. <em className="italic text-muted-foreground">Um único objetivo:</em> destravar seu crescimento.
               </h2>
-              <p className="mt-6 text-lg text-muted-foreground max-w-2xl leading-relaxed">
+              <p className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
                 Escolha o serviço que mais conversa com o momento da sua empresa. Cada um tem sua própria página com diagnóstico, método, benefícios e cases.
               </p>
             </motion.div>
