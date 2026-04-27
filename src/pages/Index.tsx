@@ -9,19 +9,19 @@ import { services } from "@/data/services";
 // Quick highlights shown on each preview card (curated from each service's benefits)
 const previewHighlights: Record<string, string[]> = {
   processos: [
-    "Mapeamento BPMN da operação atual",
-    "Redesenho enxuto com responsáveis e KPIs",
-    "POPs e treinamento da equipe",
+    "Gargalos que custam produtividade e dinheiro",
+    "Processos documentados e replicáveis",
+    "Metodologia acadêmica + 210 projetos",
   ],
   mercado: [
-    "Pesquisa quantitativa e qualitativa",
-    "Personas, concorrência e TAM/SAM/SOM",
-    "Relatório executivo com recomendações",
+    "Público, concorrentes e oportunidades reais",
+    "Decisões com menor risco e mais evidência",
+    "Pesquisa com suporte de professores doutores",
   ],
   dados: [
-    "Integração e limpeza de fontes",
-    "Modelos preditivos e estatísticos",
-    "Dashboards interativos em tempo real",
+    "Dashboards e análises que o time usa",
+    "Planilhas transformadas em inteligência visual",
+    "BI e automação com metodologia rigorosa",
   ],
 };
 

@@ -50,48 +50,48 @@ export const services: ServiceData[] = [
     eyebrow: "Serviço 01 — Operação",
     Icon: Workflow,
     hero: {
-      headline: "Seus processos estão travando seu crescimento — sem você perceber.",
+      headline: "Seus processos estão travando seu crescimento — e você provavelmente ainda não sabe onde.",
       subheadline:
-        "Mapeamos, redesenhamos e documentamos a operação da sua empresa para você parar de apagar incêndio e voltar a crescer com previsibilidade.",
+        "Identificamos os gargalos que consomem tempo, dinheiro e produtividade na sua operação — com metodologia acadêmica e mais de 210 projetos de experiência.",
     },
     problem: {
-      headline: "Você sente que sua equipe corre o dia todo, mas o negócio não anda.",
+      headline: "Crescimento travado por processos obsoletos ou não documentados.",
       pains: [
-        { text: "Tarefas que dependem de uma única pessoa, e tudo trava quando ela falta." },
-        { text: "Cada cliente é atendido de um jeito — qualidade depende de quem está no plantão." },
-        { text: "Retrabalho constante porque ninguém sabe exatamente onde uma etapa começa e a outra termina." },
-        { text: "Dificuldade para treinar novos colaboradores: o conhecimento mora na cabeça das pessoas." },
-        { text: "Crescimento parou porque escalar significaria multiplicar o caos." },
-        { text: "Você é o gargalo de praticamente todas as decisões." },
+        { text: "Ineficiências operacionais aparecem no dia a dia, mas os gargalos seguem invisíveis." },
+        { text: "Processos sem documentação fazem o conhecimento depender de pessoas específicas." },
+        { text: "Retrabalho, atrasos e ruídos de responsabilidade consomem tempo e margem." },
+        { text: "A operação cresce no esforço humano, não em um método replicável." },
+        { text: "Sem fluxos claros, treinar equipe e manter padrão vira um desafio constante." },
+        { text: "A falta de previsibilidade operacional limita decisões comerciais e estratégicas." },
       ],
     },
     solution: {
       eyebrow: "Como resolvemos",
-      headline: "Transformamos bagunça em método em 4 passos.",
+      headline: "Identificamos e eliminamos os gargalos que custam produtividade e dinheiro.",
       description:
-        "Aplicamos metodologias da engenharia (BPMN, Lean, SIPOC) para enxergar sua operação de fora — e devolvemos um manual claro de como ela deveria funcionar.",
+        "Aplicamos metodologia acadêmica para mapear o funcionamento real da empresa, redesenhar fluxos e transformar processos soltos em uma operação documentada, clara e escalável.",
       steps: [
         {
           title: "Diagnóstico imersivo",
-          description: "Entrevistas com sua equipe e observação direta para entender como o trabalho realmente acontece — não como deveria acontecer no papel.",
+          description: "Entendemos como o trabalho acontece na prática e quais pontos impedem produtividade, padrão e crescimento.",
         },
         {
           title: "Mapeamento AS-IS",
-          description: "Desenhamos o fluxo atual em notação BPMN, identificando gargalos, retrabalhos e pontos cegos que custam tempo e dinheiro.",
+          description: "Documentamos o fluxo atual para revelar gargalos, retrabalhos e responsabilidades pouco claras.",
         },
         {
           title: "Redesenho TO-BE",
-          description: "Propomos a versão otimizada do processo, com responsáveis claros, indicadores de performance e pontos de automação.",
+          description: "Propomos uma estrutura otimizada, com responsáveis claros, indicadores e menos dependência de improviso.",
         },
         {
           title: "Documentação e implantação",
-          description: "Entregamos manuais, POPs e treinamentos para que a operação rode mesmo sem você no meio dela.",
+          description: "Organizamos materiais e orientações para que a equipe sustente o novo fluxo no dia a dia.",
         },
       ],
     },
     benefits: {
       eyebrow: "O que você ganha",
-      headline: "Operação fluida, time autônomo, dono livre.",
+      headline: "Produtividade, clareza e escala com menos desperdício operacional.",
       items: [
         { title: "Reduz custo operacional", description: "Identificamos atividades sem valor que somam até 30% do tempo da equipe.", Icon: TrendingUp },
         { title: "Acelera o tempo de entrega", description: "Processos enxutos entregam mais rápido com a mesma equipe.", Icon: Zap },
@@ -125,9 +125,9 @@ export const services: ServiceData[] = [
       },
     ],
     cta: {
-      headline: "Vamos achar onde sua operação está vazando dinheiro.",
+      headline: "Quero um diagnóstico gratuito.",
       subheadline:
-        "Em 30 minutos, identificamos os 3 maiores gargalos da sua operação e te entregamos um mini-plano de ação. Sem custo, sem compromisso.",
+        "Vamos identificar quais gargalos operacionais estão consumindo produtividade, dinheiro e previsibilidade na sua empresa.",
     },
   },
 
@@ -138,48 +138,48 @@ export const services: ServiceData[] = [
     eyebrow: "Serviço 02 — Estratégia",
     Icon: Target,
     hero: {
-      headline: "Você está tomando decisões sem dados de mercado confiáveis.",
+      headline: "Você está tomando decisões estratégicas sem dados confiáveis de mercado?",
       subheadline:
-        "Pesquisas estruturadas de mercado, concorrência e cliente para você parar de apostar no escuro e começar a crescer com convicção.",
+        "Entenda seu público, seus concorrentes e as oportunidades reais do seu setor — com pesquisas conduzidas por alunos da UFABC com suporte de professores doutores.",
     },
     problem: {
-      headline: "Decidir sem dados é caro — e você só percebe quando o prejuízo aparece.",
+      headline: "Incerteza na entrada em novos mercados ou no lançamento de produtos custa caro.",
       pains: [
-        { text: "Lançou um produto que parecia perfeito — e o mercado não respondeu como esperado." },
-        { text: "Não sabe ao certo quem é seu cliente ideal nem por que ele compra (ou desiste)." },
-        { text: "Concorrência crescendo mais rápido e você não entende exatamente o que estão fazendo de diferente." },
-        { text: "Está pensando em entrar em um novo mercado, mas não tem ideia do tamanho real da oportunidade." },
-        { text: "Marketing gastando alto em canais que não trazem o cliente certo." },
-        { text: "Decisões de preço, posicionamento e canal feitas no 'achismo do dono'." },
+        { text: "Decisões de expansão, produto e posicionamento ainda são tomadas com pouca evidência." },
+        { text: "O público parece conhecido, mas seus reais critérios de compra não estão claros." },
+        { text: "Concorrentes avançam e fica difícil entender qual diferencial realmente pesa no mercado." },
+        { text: "Há oportunidades no setor, mas falta dimensionar tamanho, risco e prioridade." },
+        { text: "Campanhas e ações comerciais perdem força quando não partem do cliente certo." },
+        { text: "Sem pesquisa, preço, canal e mensagem acabam dependendo mais de intuição do que de validação." },
       ],
     },
     solution: {
       eyebrow: "Como resolvemos",
-      headline: "Pesquisa de mercado feita por quem ainda acredita em rigor.",
+      headline: "Dados de mercado confiáveis para decisões mais assertivas e menor risco.",
       description:
-        "Combinamos pesquisa quantitativa, entrevistas de profundidade e análise competitiva para te entregar um retrato claro do seu mercado — e o que fazer com ele.",
+        "Combinamos pesquisa, análise competitiva e suporte acadêmico para transformar incerteza em direcionamento estratégico claro para o seu negócio.",
       steps: [
         {
           title: "Briefing estratégico",
-          description: "Entendemos suas hipóteses, decisões em jogo e o que precisa ser respondido para você agir com confiança.",
+          description: "Definimos quais decisões precisam de evidência e quais perguntas devem orientar a pesquisa.",
         },
         {
           title: "Pesquisa de campo",
-          description: "Aplicamos surveys, conduzimos entrevistas qualitativas e mapeamos toda a concorrência relevante do seu setor.",
+          description: "Coletamos dados sobre público, concorrência, setor e oportunidades reais de atuação.",
         },
         {
           title: "Análise e cruzamento",
-          description: "Transformamos dados brutos em insights acionáveis: personas, oportunidades, ameaças e benchmarks.",
+          description: "Cruzamos informações para identificar personas, oportunidades, ameaças e diferenciais competitivos.",
         },
         {
           title: "Relatório executivo",
-          description: "Apresentação clara, com recomendações práticas — não um PDF de 200 páginas que ninguém lê.",
+          description: "Entregamos recomendações objetivas para reduzir risco e orientar próximos passos comerciais.",
         },
       ],
     },
     benefits: {
       eyebrow: "O que você ganha",
-      headline: "Decisões com lastro. Marketing com pontaria. Estratégia com chão.",
+      headline: "Mais clareza sobre público, concorrência e oportunidades reais.",
       items: [
         { title: "Cliente ideal mapeado", description: "Personas reais com dores, gatilhos e jornada de compra documentadas.", Icon: Users },
         { title: "Concorrência radiografada", description: "Posicionamento, pricing, canais e pontos vulneráveis do seu mercado.", Icon: Eye },
@@ -213,9 +213,9 @@ export const services: ServiceData[] = [
       },
     ],
     cta: {
-      headline: "Pare de apostar. Comece a saber.",
+      headline: "Quero entender meu mercado.",
       subheadline:
-        "Em uma conversa de 30 minutos, mapeamos as 3 perguntas estratégicas mais críticas do seu negócio hoje — e te mostramos como respondê-las com dados.",
+        "Vamos mapear quais perguntas estratégicas precisam ser respondidas para você decidir com mais segurança.",
     },
   },
 
@@ -226,48 +226,48 @@ export const services: ServiceData[] = [
     eyebrow: "Serviço 03 — Inteligência",
     Icon: BarChart3,
     hero: {
-      headline: "Você tem dados, mas não consegue transformá-los em decisão.",
+      headline: "Você tem dados, mas ainda não consegue transformá-los em decisões.",
       subheadline:
-        "Estruturamos, analisamos e visualizamos os dados da sua empresa para que cada decisão deixe de ser palpite e passe a ser evidência.",
+        "Criamos dashboards e análises que transformam o caos de planilhas em inteligência real de negócio — acessível, visual e atualizado em tempo real.",
     },
     problem: {
-      headline: "Dados acumulados em planilhas não geram valor — geram ansiedade.",
+      headline: "Dados existem, mas não geram decisões — são subutilizados ou incompreensíveis.",
       pains: [
-        { text: "Tem planilhas espalhadas em vários setores e ninguém sabe qual versão é a verdadeira." },
-        { text: "Relatórios manuais consomem horas por semana e ainda chegam atrasados." },
-        { text: "Não consegue prever vendas, churn ou demanda com nenhum nível de precisão." },
-        { text: "Sente que poderia tomar decisões melhores se enxergasse os dados — mas eles estão dispersos e crus." },
-        { text: "Investiu em sistema (ERP, CRM) mas usa só 10% do que ele oferece em informação." },
-        { text: "Reuniões viram debate de opinião porque não há dado em comum sobre a mesa." },
+        { text: "Planilhas e sistemas acumulam informação, mas não mostram claramente o que fazer." },
+        { text: "Relatórios manuais chegam tarde e dificultam decisões rápidas." },
+        { text: "Indicadores importantes ficam dispersos, sem uma fonte única de verdade." },
+        { text: "O time percebe que há valor nos dados, mas não consegue traduzi-los em ação." },
+        { text: "Sem visualização clara, reuniões continuam baseadas em opinião e urgência." },
+        { text: "A empresa perde oportunidades porque não acompanha padrões, tendências e alertas em tempo real." },
       ],
     },
     solution: {
       eyebrow: "Como resolvemos",
-      headline: "Do caos de planilhas ao dashboard que decide por você.",
+      headline: "Transformamos dados em dashboards e insights que a empresa realmente usa.",
       description:
-        "Conectamos suas fontes de dados, modelamos as informações e construímos painéis interativos que mostram o que importa — quando importa.",
+        "Estruturamos bases, automatizamos análises e construímos visualizações acessíveis para que os dados deixem de ser ruído e passem a orientar decisões.",
       steps: [
         {
           title: "Auditoria de dados",
-          description: "Mapeamos todas as fontes, qualidade e lacunas dos dados que sua empresa já gera (e dos que deveria estar gerando).",
+          description: "Mapeamos fontes, qualidade, lacunas e perguntas de negócio que os dados precisam responder.",
         },
         {
           title: "Estruturação e ETL",
-          description: "Limpamos, integramos e organizamos as bases para que toda análise futura parta de uma fonte confiável e única.",
+          description: "Limpamos e integramos bases para criar uma fonte confiável e utilizável no dia a dia.",
         },
         {
           title: "Análise estatística",
-          description: "Usamos estatística e modelos preditivos para responder perguntas de negócio: o que está acontecendo, por quê e o que vem a seguir.",
+          description: "Geramos leituras estatísticas e insights que explicam o cenário atual e apontam oportunidades.",
         },
         {
           title: "Dashboards e capacitação",
-          description: "Entregamos painéis vivos (Power BI, Looker ou similares) e treinamos seu time para ler e agir sobre eles.",
+          description: "Entregamos painéis visuais, atualizáveis e acessíveis para apoiar decisões contínuas.",
         },
       ],
     },
     benefits: {
       eyebrow: "O que você ganha",
-      headline: "Visibilidade total. Reação rápida. Previsão real.",
+      headline: "Inteligência visual, acessível e atualizada para decidir melhor.",
       items: [
         { title: "Dashboards em tempo real", description: "KPIs do negócio em um único lugar, atualizados automaticamente.", Icon: Gauge },
         { title: "Previsões confiáveis", description: "Modelos estatísticos para vendas, demanda, churn e estoque.", Icon: LineChart },
@@ -301,9 +301,9 @@ export const services: ServiceData[] = [
       },
     ],
     cta: {
-      headline: "Seus dados já têm a resposta. Falta organizá-los.",
+      headline: "Quero ver meus dados funcionando.",
       subheadline:
-        "Em 30 minutos, identificamos as 3 perguntas de negócio mais valiosas que seus dados atuais podem responder — e te mostramos como.",
+        "Vamos entender como transformar suas bases atuais em análises, dashboards e decisões mais claras.",
     },
   },
 ];
