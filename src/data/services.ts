@@ -138,48 +138,48 @@ export const services: ServiceData[] = [
     eyebrow: "Serviço 02 — Estratégia",
     Icon: Target,
     hero: {
-      headline: "Você está tomando decisões sem dados de mercado confiáveis.",
+      headline: "Você está tomando decisões estratégicas sem dados confiáveis de mercado?",
       subheadline:
-        "Pesquisas estruturadas de mercado, concorrência e cliente para você parar de apostar no escuro e começar a crescer com convicção.",
+        "Entenda seu público, seus concorrentes e as oportunidades reais do seu setor — com pesquisas conduzidas por alunos da UFABC com suporte de professores doutores.",
     },
     problem: {
-      headline: "Decidir sem dados é caro — e você só percebe quando o prejuízo aparece.",
+      headline: "Incerteza na entrada em novos mercados ou no lançamento de produtos custa caro.",
       pains: [
-        { text: "Lançou um produto que parecia perfeito — e o mercado não respondeu como esperado." },
-        { text: "Não sabe ao certo quem é seu cliente ideal nem por que ele compra (ou desiste)." },
-        { text: "Concorrência crescendo mais rápido e você não entende exatamente o que estão fazendo de diferente." },
-        { text: "Está pensando em entrar em um novo mercado, mas não tem ideia do tamanho real da oportunidade." },
-        { text: "Marketing gastando alto em canais que não trazem o cliente certo." },
-        { text: "Decisões de preço, posicionamento e canal feitas no 'achismo do dono'." },
+        { text: "Decisões de expansão, produto e posicionamento ainda são tomadas com pouca evidência." },
+        { text: "O público parece conhecido, mas seus reais critérios de compra não estão claros." },
+        { text: "Concorrentes avançam e fica difícil entender qual diferencial realmente pesa no mercado." },
+        { text: "Há oportunidades no setor, mas falta dimensionar tamanho, risco e prioridade." },
+        { text: "Campanhas e ações comerciais perdem força quando não partem do cliente certo." },
+        { text: "Sem pesquisa, preço, canal e mensagem acabam dependendo mais de intuição do que de validação." },
       ],
     },
     solution: {
       eyebrow: "Como resolvemos",
-      headline: "Pesquisa de mercado feita por quem ainda acredita em rigor.",
+      headline: "Dados de mercado confiáveis para decisões mais assertivas e menor risco.",
       description:
-        "Combinamos pesquisa quantitativa, entrevistas de profundidade e análise competitiva para te entregar um retrato claro do seu mercado — e o que fazer com ele.",
+        "Combinamos pesquisa, análise competitiva e suporte acadêmico para transformar incerteza em direcionamento estratégico claro para o seu negócio.",
       steps: [
         {
           title: "Briefing estratégico",
-          description: "Entendemos suas hipóteses, decisões em jogo e o que precisa ser respondido para você agir com confiança.",
+          description: "Definimos quais decisões precisam de evidência e quais perguntas devem orientar a pesquisa.",
         },
         {
           title: "Pesquisa de campo",
-          description: "Aplicamos surveys, conduzimos entrevistas qualitativas e mapeamos toda a concorrência relevante do seu setor.",
+          description: "Coletamos dados sobre público, concorrência, setor e oportunidades reais de atuação.",
         },
         {
           title: "Análise e cruzamento",
-          description: "Transformamos dados brutos em insights acionáveis: personas, oportunidades, ameaças e benchmarks.",
+          description: "Cruzamos informações para identificar personas, oportunidades, ameaças e diferenciais competitivos.",
         },
         {
           title: "Relatório executivo",
-          description: "Apresentação clara, com recomendações práticas — não um PDF de 200 páginas que ninguém lê.",
+          description: "Entregamos recomendações objetivas para reduzir risco e orientar próximos passos comerciais.",
         },
       ],
     },
     benefits: {
       eyebrow: "O que você ganha",
-      headline: "Decisões com lastro. Marketing com pontaria. Estratégia com chão.",
+      headline: "Mais clareza sobre público, concorrência e oportunidades reais.",
       items: [
         { title: "Cliente ideal mapeado", description: "Personas reais com dores, gatilhos e jornada de compra documentadas.", Icon: Users },
         { title: "Concorrência radiografada", description: "Posicionamento, pricing, canais e pontos vulneráveis do seu mercado.", Icon: Eye },
