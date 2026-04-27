@@ -5,6 +5,7 @@ import { Hero } from "@/components/Hero";
 import { ServicePreviewCard } from "@/components/sections/ServicePreviewCard";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { services } from "@/data/services";
+import { Mail, MapPin, Phone } from "lucide-react";
 
 // Quick highlights shown on each preview card (curated from each service's benefits)
 const previewHighlights: Record<string, string[]> = {
@@ -153,13 +154,39 @@ const Index = () => {
         </div>
 
         <footer className="bg-ink text-paper/60 border-t border-paper/10 py-10">
-          <div className="container max-w-6xl flex flex-col md:flex-row items-center justify-between gap-4 text-sm">
-            <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-md bg-lime text-ink flex items-center justify-center font-display font-bold">U</div>
-              <span className="font-display font-medium text-paper">UFABC Jr.</span>
-              <span className="text-paper/40">· Consultoria Empresarial</span>
+          <div className="container max-w-6xl grid gap-8 text-sm md:grid-cols-[1fr_auto] md:items-start">
+            <div className="space-y-5">
+              <div className="flex items-center gap-2">
+                <div className="w-8 h-8 rounded-md bg-lime text-ink flex items-center justify-center font-display font-bold">U</div>
+                <span className="font-display font-medium text-paper">UFABC Jr.</span>
+                <span className="text-paper/40">· Consultoria Empresarial</span>
+              </div>
+              <div>© {new Date().getFullYear()} UFABC Jr. Todos os direitos reservados.</div>
             </div>
-            <div>© {new Date().getFullYear()} UFABC Jr. Todos os direitos reservados.</div>
+
+            <div className="grid gap-4 sm:grid-cols-3 md:grid-cols-1 lg:grid-cols-3">
+              <div className="flex items-start gap-3">
+                <Mail className="w-4 h-4 mt-1 text-lime shrink-0" strokeWidth={2} />
+                <div>
+                  <div className="text-paper/40">E-mail</div>
+                  <div className="font-medium text-paper">contato@ufabcjr.com.br</div>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <Phone className="w-4 h-4 mt-1 text-lime shrink-0" strokeWidth={2} />
+                <div>
+                  <div className="text-paper/40">Telefone / WhatsApp</div>
+                  <div className="font-medium text-paper">(11) 0000-0000</div>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <MapPin className="w-4 h-4 mt-1 text-lime shrink-0" strokeWidth={2} />
+                <div>
+                  <div className="text-paper/40">Onde estamos</div>
+                  <div className="font-medium text-paper">UFABC · Santo André / São Bernardo</div>
+                </div>
+              </div>
+            </div>
           </div>
         </footer>
       </main>

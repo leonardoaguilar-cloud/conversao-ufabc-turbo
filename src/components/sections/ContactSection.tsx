@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, Mail, Phone, MapPin, CheckCircle2 } from "lucide-react";
+import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -76,30 +76,6 @@ export const ContactSection = () => {
               Conte um pouco sobre o seu negócio e o que você quer destravar. Marcamos uma conversa
               de 30 minutos sem custo para entender seu contexto e indicar o melhor caminho.
             </p>
-
-            <div className="mt-10 space-y-4">
-              <div className="flex items-start gap-3 text-sm">
-                <Mail className="w-4 h-4 mt-1 text-lime shrink-0" strokeWidth={2} />
-                <div>
-                  <div className="text-muted-foreground">E-mail</div>
-                  <div className="font-medium">contato@ufabcjr.com.br</div>
-                </div>
-              </div>
-              <div className="flex items-start gap-3 text-sm">
-                <Phone className="w-4 h-4 mt-1 text-lime shrink-0" strokeWidth={2} />
-                <div>
-                  <div className="text-muted-foreground">Telefone / WhatsApp</div>
-                  <div className="font-medium">(11) 0000-0000</div>
-                </div>
-              </div>
-              <div className="flex items-start gap-3 text-sm">
-                <MapPin className="w-4 h-4 mt-1 text-lime shrink-0" strokeWidth={2} />
-                <div>
-                  <div className="text-muted-foreground">Onde estamos</div>
-                  <div className="font-medium">UFABC · Santo André / São Bernardo</div>
-                </div>
-              </div>
-            </div>
 
             <div className="mt-10 inline-flex items-center gap-3 rounded-full border border-border bg-card px-4 py-2 text-sm text-muted-foreground">
               <span className="h-2 w-2 rounded-full bg-lime animate-pulse" />
