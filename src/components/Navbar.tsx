@@ -19,7 +19,7 @@ export const Navbar = ({ onCTA }: NavbarProps) => {
         scrolled ? "bg-background/80 backdrop-blur-lg border-b border-border" : "bg-transparent"
       }`}
     >
-      <div className="container max-w-7xl flex items-center justify-between h-16 md:h-20">
+      <div className="container max-w-7xl flex items-center justify-between h-16 md:h-20 bg-muted-foreground">
         <a href="#top" className="flex items-center gap-2 group">
           <div className="w-9 h-9 rounded-lg bg-ink text-lime flex items-center justify-center font-display font-bold text-lg group-hover:bg-lime group-hover:text-ink transition-colors">
             U
