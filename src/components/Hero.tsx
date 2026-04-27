@@ -35,7 +35,7 @@ export const Hero = ({ onScrollToServices }: HeroProps) => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.1 }}
-          className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] font-medium leading-[0.95] tracking-tight text-balance max-w-5xl mx-auto"
+          className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium leading-[0.98] tracking-tight text-balance max-w-5xl mx-auto"
         >
           Crescimento não é sorte.{" "}
           <em className="italic text-muted-foreground">É método.</em>
@@ -70,13 +70,14 @@ export const Hero = ({ onScrollToServices }: HeroProps) => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
-          className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 max-w-3xl mx-auto pt-10 border-t border-border"
+          className="mt-20 grid grid-cols-2 md:grid-cols-5 gap-8 md:gap-10 max-w-4xl mx-auto pt-10 border-t border-border"
         >
           {[
             { value: "+200", label: "projetos entregues" },
             { value: "+170", label: "clientes atendidos" },
             { value: "14+ anos", label: "no mercado" },
-            { value: "97% / 95%", label: "NPS / CSAT" },
+            { value: "97%", label: "NPS" },
+            { value: "95%", label: "CSAT" },
           ].map((s, i) => (
             <div key={i}>
               <div className="font-display text-3xl md:text-4xl font-semibold tracking-tight">{s.value}</div>
