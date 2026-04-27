@@ -50,48 +50,48 @@ export const services: ServiceData[] = [
     eyebrow: "Serviço 01 — Operação",
     Icon: Workflow,
     hero: {
-      headline: "Seus processos estão travando seu crescimento — sem você perceber.",
+      headline: "Seus processos estão travando seu crescimento — e você provavelmente ainda não sabe onde.",
       subheadline:
-        "Mapeamos, redesenhamos e documentamos a operação da sua empresa para você parar de apagar incêndio e voltar a crescer com previsibilidade.",
+        "Identificamos os gargalos que consomem tempo, dinheiro e produtividade na sua operação — com metodologia acadêmica e mais de 210 projetos de experiência.",
     },
     problem: {
-      headline: "Você sente que sua equipe corre o dia todo, mas o negócio não anda.",
+      headline: "Crescimento travado por processos obsoletos ou não documentados.",
       pains: [
-        { text: "Tarefas que dependem de uma única pessoa, e tudo trava quando ela falta." },
-        { text: "Cada cliente é atendido de um jeito — qualidade depende de quem está no plantão." },
-        { text: "Retrabalho constante porque ninguém sabe exatamente onde uma etapa começa e a outra termina." },
-        { text: "Dificuldade para treinar novos colaboradores: o conhecimento mora na cabeça das pessoas." },
-        { text: "Crescimento parou porque escalar significaria multiplicar o caos." },
-        { text: "Você é o gargalo de praticamente todas as decisões." },
+        { text: "Ineficiências operacionais aparecem no dia a dia, mas os gargalos seguem invisíveis." },
+        { text: "Processos sem documentação fazem o conhecimento depender de pessoas específicas." },
+        { text: "Retrabalho, atrasos e ruídos de responsabilidade consomem tempo e margem." },
+        { text: "A operação cresce no esforço humano, não em um método replicável." },
+        { text: "Sem fluxos claros, treinar equipe e manter padrão vira um desafio constante." },
+        { text: "A falta de previsibilidade operacional limita decisões comerciais e estratégicas." },
       ],
     },
     solution: {
       eyebrow: "Como resolvemos",
-      headline: "Transformamos bagunça em método em 4 passos.",
+      headline: "Identificamos e eliminamos os gargalos que custam produtividade e dinheiro.",
       description:
-        "Aplicamos metodologias da engenharia (BPMN, Lean, SIPOC) para enxergar sua operação de fora — e devolvemos um manual claro de como ela deveria funcionar.",
+        "Aplicamos metodologia acadêmica para mapear o funcionamento real da empresa, redesenhar fluxos e transformar processos soltos em uma operação documentada, clara e escalável.",
       steps: [
         {
           title: "Diagnóstico imersivo",
-          description: "Entrevistas com sua equipe e observação direta para entender como o trabalho realmente acontece — não como deveria acontecer no papel.",
+          description: "Entendemos como o trabalho acontece na prática e quais pontos impedem produtividade, padrão e crescimento.",
         },
         {
           title: "Mapeamento AS-IS",
-          description: "Desenhamos o fluxo atual em notação BPMN, identificando gargalos, retrabalhos e pontos cegos que custam tempo e dinheiro.",
+          description: "Documentamos o fluxo atual para revelar gargalos, retrabalhos e responsabilidades pouco claras.",
         },
         {
           title: "Redesenho TO-BE",
-          description: "Propomos a versão otimizada do processo, com responsáveis claros, indicadores de performance e pontos de automação.",
+          description: "Propomos uma estrutura otimizada, com responsáveis claros, indicadores e menos dependência de improviso.",
         },
         {
           title: "Documentação e implantação",
-          description: "Entregamos manuais, POPs e treinamentos para que a operação rode mesmo sem você no meio dela.",
+          description: "Organizamos materiais e orientações para que a equipe sustente o novo fluxo no dia a dia.",
         },
       ],
     },
     benefits: {
       eyebrow: "O que você ganha",
-      headline: "Operação fluida, time autônomo, dono livre.",
+      headline: "Produtividade, clareza e escala com menos desperdício operacional.",
       items: [
         { title: "Reduz custo operacional", description: "Identificamos atividades sem valor que somam até 30% do tempo da equipe.", Icon: TrendingUp },
         { title: "Acelera o tempo de entrega", description: "Processos enxutos entregam mais rápido com a mesma equipe.", Icon: Zap },
