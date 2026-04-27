@@ -45,7 +45,7 @@ const Index = () => {
         <Hero onScrollToServices={scrollToServices} />
 
         {/* Logo strip / trust */}
-        <section className="border-y bg-paper-warm/50 py-8 overflow-hidden border-accent-foreground">
+        <section className="border-y bg-paper-warm/50 py-8 overflow-hidden border-foreground">
           <div className="container max-w-6xl">
             <div className="text-center text-xs uppercase tracking-[0.25em] text-muted-foreground mb-4">
               Empresas que confiaram nos nossos consultores
