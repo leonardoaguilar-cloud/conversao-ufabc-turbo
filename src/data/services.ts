@@ -125,9 +125,9 @@ export const services: ServiceData[] = [
       },
     ],
     cta: {
-      headline: "Vamos achar onde sua operação está vazando dinheiro.",
+      headline: "Quero um diagnóstico gratuito.",
       subheadline:
-        "Em 30 minutos, identificamos os 3 maiores gargalos da sua operação e te entregamos um mini-plano de ação. Sem custo, sem compromisso.",
+        "Vamos identificar quais gargalos operacionais estão consumindo produtividade, dinheiro e previsibilidade na sua empresa.",
     },
   },
 
@@ -213,9 +213,9 @@ export const services: ServiceData[] = [
       },
     ],
     cta: {
-      headline: "Pare de apostar. Comece a saber.",
+      headline: "Quero entender meu mercado.",
       subheadline:
-        "Em uma conversa de 30 minutos, mapeamos as 3 perguntas estratégicas mais críticas do seu negócio hoje — e te mostramos como respondê-las com dados.",
+        "Vamos mapear quais perguntas estratégicas precisam ser respondidas para você decidir com mais segurança.",
     },
   },
 
@@ -301,9 +301,9 @@ export const services: ServiceData[] = [
       },
     ],
     cta: {
-      headline: "Seus dados já têm a resposta. Falta organizá-los.",
+      headline: "Quero ver meus dados funcionando.",
       subheadline:
-        "Em 30 minutos, identificamos as 3 perguntas de negócio mais valiosas que seus dados atuais podem responder — e te mostramos como.",
+        "Vamos entender como transformar suas bases atuais em análises, dashboards e decisões mais claras.",
     },
   },
 ];
