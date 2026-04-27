@@ -226,48 +226,48 @@ export const services: ServiceData[] = [
     eyebrow: "Serviço 03 — Inteligência",
     Icon: BarChart3,
     hero: {
-      headline: "Você tem dados, mas não consegue transformá-los em decisão.",
+      headline: "Você tem dados, mas ainda não consegue transformá-los em decisões.",
       subheadline:
-        "Estruturamos, analisamos e visualizamos os dados da sua empresa para que cada decisão deixe de ser palpite e passe a ser evidência.",
+        "Criamos dashboards e análises que transformam o caos de planilhas em inteligência real de negócio — acessível, visual e atualizado em tempo real.",
     },
     problem: {
-      headline: "Dados acumulados em planilhas não geram valor — geram ansiedade.",
+      headline: "Dados existem, mas não geram decisões — são subutilizados ou incompreensíveis.",
       pains: [
-        { text: "Tem planilhas espalhadas em vários setores e ninguém sabe qual versão é a verdadeira." },
-        { text: "Relatórios manuais consomem horas por semana e ainda chegam atrasados." },
-        { text: "Não consegue prever vendas, churn ou demanda com nenhum nível de precisão." },
-        { text: "Sente que poderia tomar decisões melhores se enxergasse os dados — mas eles estão dispersos e crus." },
-        { text: "Investiu em sistema (ERP, CRM) mas usa só 10% do que ele oferece em informação." },
-        { text: "Reuniões viram debate de opinião porque não há dado em comum sobre a mesa." },
+        { text: "Planilhas e sistemas acumulam informação, mas não mostram claramente o que fazer." },
+        { text: "Relatórios manuais chegam tarde e dificultam decisões rápidas." },
+        { text: "Indicadores importantes ficam dispersos, sem uma fonte única de verdade." },
+        { text: "O time percebe que há valor nos dados, mas não consegue traduzi-los em ação." },
+        { text: "Sem visualização clara, reuniões continuam baseadas em opinião e urgência." },
+        { text: "A empresa perde oportunidades porque não acompanha padrões, tendências e alertas em tempo real." },
       ],
     },
     solution: {
       eyebrow: "Como resolvemos",
-      headline: "Do caos de planilhas ao dashboard que decide por você.",
+      headline: "Transformamos dados em dashboards e insights que a empresa realmente usa.",
       description:
-        "Conectamos suas fontes de dados, modelamos as informações e construímos painéis interativos que mostram o que importa — quando importa.",
+        "Estruturamos bases, automatizamos análises e construímos visualizações acessíveis para que os dados deixem de ser ruído e passem a orientar decisões.",
       steps: [
         {
           title: "Auditoria de dados",
-          description: "Mapeamos todas as fontes, qualidade e lacunas dos dados que sua empresa já gera (e dos que deveria estar gerando).",
+          description: "Mapeamos fontes, qualidade, lacunas e perguntas de negócio que os dados precisam responder.",
         },
         {
           title: "Estruturação e ETL",
-          description: "Limpamos, integramos e organizamos as bases para que toda análise futura parta de uma fonte confiável e única.",
+          description: "Limpamos e integramos bases para criar uma fonte confiável e utilizável no dia a dia.",
         },
         {
           title: "Análise estatística",
-          description: "Usamos estatística e modelos preditivos para responder perguntas de negócio: o que está acontecendo, por quê e o que vem a seguir.",
+          description: "Geramos leituras estatísticas e insights que explicam o cenário atual e apontam oportunidades.",
         },
         {
           title: "Dashboards e capacitação",
-          description: "Entregamos painéis vivos (Power BI, Looker ou similares) e treinamos seu time para ler e agir sobre eles.",
+          description: "Entregamos painéis visuais, atualizáveis e acessíveis para apoiar decisões contínuas.",
         },
       ],
     },
     benefits: {
       eyebrow: "O que você ganha",
-      headline: "Visibilidade total. Reação rápida. Previsão real.",
+      headline: "Inteligência visual, acessível e atualizada para decidir melhor.",
       items: [
         { title: "Dashboards em tempo real", description: "KPIs do negócio em um único lugar, atualizados automaticamente.", Icon: Gauge },
         { title: "Previsões confiáveis", description: "Modelos estatísticos para vendas, demanda, churn e estoque.", Icon: LineChart },
