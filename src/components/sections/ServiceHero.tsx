@@ -10,7 +10,7 @@ interface ServiceHeroProps {
 
 export const ServiceHero = ({ eyebrow, headline, subheadline, Icon }: ServiceHeroProps) => {
   return (
-    <section className="pt-16 pb-12 md:pt-24 md:pb-20 border-t border-border">
+    <section className="pt-16 pb-12 md:pt-24 md:pb-20 border-t border-border bg-background">
       <div className="container max-w-5xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -27,7 +27,7 @@ export const ServiceHero = ({ eyebrow, headline, subheadline, Icon }: ServiceHer
             </span>
           </div>
 
-          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium leading-[1.0] tracking-tight text-balance mb-6 max-w-4xl mx-auto">
+          <h1 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium leading-[1.04] tracking-tight text-balance mb-6 max-w-4xl mx-auto">
             {headline}
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed mx-auto">

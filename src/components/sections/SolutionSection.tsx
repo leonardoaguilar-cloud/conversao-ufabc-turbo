@@ -31,7 +31,7 @@ export const SolutionSection = ({ eyebrow, headline, description, steps, Icon }:
               <span className="h-px w-8 bg-lime/60" />
               {eyebrow}
             </div>
-            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-medium text-balance leading-[1.05] mb-6">
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-medium text-balance leading-[1.08] mb-6">
               {headline}
             </h2>
             <p className="text-lg text-paper/70 leading-relaxed max-w-md">{description}</p>

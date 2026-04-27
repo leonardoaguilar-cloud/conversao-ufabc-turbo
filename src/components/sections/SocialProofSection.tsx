@@ -15,7 +15,7 @@ interface SocialProofProps {
 
 export const SocialProofSection = ({ cases }: SocialProofProps) => {
   return (
-    <section className="py-20 md:py-28 bg-paper-warm border-y border-border">
+    <section className="py-20 md:py-28 bg-background border-y border-border">
       <div className="container max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -28,7 +28,7 @@ export const SocialProofSection = ({ cases }: SocialProofProps) => {
             <span className="h-px w-8 bg-foreground/30" />
             Quem já cresceu com a gente
           </div>
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-medium text-balance leading-[1.05]">
+          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-medium text-balance leading-[1.08]">
             Resultados <em className="italic text-muted-foreground">que falam</em> mais alto.
           </h2>
         </motion.div>

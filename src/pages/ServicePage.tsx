@@ -74,7 +74,7 @@ const ServicePage = () => {
         </motion.div>
 
         {/* Other services */}
-        <section className="py-20 md:py-28 border-t border-border bg-paper-warm/40">
+        <section className="py-20 md:py-28 border-t border-border bg-background">
           <div className="container max-w-6xl">
             <div className="flex flex-col items-center text-center gap-6 mb-10">
               <div>
