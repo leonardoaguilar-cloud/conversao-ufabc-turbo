@@ -55,7 +55,7 @@ export const ContactSection = () => {
   return (
     <section id="contato" className="py-24 md:py-32 border-t border-border bg-paper-warm/40">
       <div className="container max-w-6xl">
-        <div className="grid lg:grid-cols-12 gap-10 lg:gap-16 items-start">
+        <div className="grid lg:grid-cols-12 gap-10 lg:gap-16 items-start bg-[#d9ecd5]/[0.82]">
           {/* Left: copy + info */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
