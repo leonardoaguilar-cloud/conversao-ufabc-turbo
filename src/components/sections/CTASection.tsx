@@ -42,7 +42,7 @@ export const CTASection = ({ service, headline, subheadline }: CTASectionProps) 
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-lime text-ink text-xs font-semibold uppercase tracking-wider mb-6">
               <Gift className="w-3.5 h-3.5" /> Diagnóstico gratuito
             </div>
-            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-medium text-balance leading-[1.02] mb-5">
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-medium text-balance leading-[1.06] mb-5">
               {headline}
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8 max-w-lg">
