@@ -6,7 +6,6 @@ import { Navbar } from "@/components/Navbar";
 import { ServiceHero } from "@/components/sections/ServiceHero";
 import { ProblemSection } from "@/components/sections/ProblemSection";
 import { SolutionSection } from "@/components/sections/SolutionSection";
-import { BenefitsSection } from "@/components/sections/BenefitsSection";
 import { SocialProofSection } from "@/components/sections/SocialProofSection";
 import { CTASection } from "@/components/sections/CTASection";
 import { services } from "@/data/services";
@@ -64,11 +63,6 @@ const ServicePage = () => {
             steps={service.solution.steps}
             Icon={service.Icon}
           />
-          <BenefitsSection
-            eyebrow={service.benefits.eyebrow}
-            headline={service.benefits.headline}
-            benefits={service.benefits.items}
-          />
           <SocialProofSection cases={service.cases} />
           <div id="contato" ref={ctaRef}>
             <CTASection
@@ -82,13 +76,13 @@ const ServicePage = () => {
         {/* Other services */}
         <section className="py-20 md:py-28 border-t border-border bg-paper-warm/40">
           <div className="container max-w-6xl">
-            <div className="flex items-end justify-between flex-wrap gap-6 mb-10">
+            <div className="flex flex-col items-center text-center gap-6 mb-10">
               <div>
-                <div className="flex items-center gap-2 text-sm uppercase tracking-[0.2em] text-muted-foreground mb-4">
+                <div className="flex items-center justify-center gap-2 text-sm uppercase tracking-[0.2em] text-muted-foreground mb-4">
                   <span className="h-px w-8 bg-foreground/30" />
                   Outros serviços
                 </div>
-                <h2 className="font-display text-3xl md:text-4xl font-medium leading-tight text-balance max-w-2xl">
+                <h2 className="font-display text-3xl md:text-4xl font-medium leading-tight text-balance max-w-2xl mx-auto">
                   Combinamos as três frentes para destravar seu crescimento.
                 </h2>
               </div>
