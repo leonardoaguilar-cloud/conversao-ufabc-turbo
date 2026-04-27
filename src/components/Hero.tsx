@@ -20,12 +20,12 @@ export const Hero = ({ onScrollToServices }: HeroProps) => {
         }}
       />
 
-      <div className="container max-w-6xl relative">
+      <div className="container max-w-6xl relative text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
-          className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-card border border-border text-xs font-medium text-muted-foreground mb-8"
+          className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-card border border-border text-xs font-medium text-muted-foreground mb-8 mx-auto"
         >
           <Sparkles className="w-3.5 h-3.5 text-lime" strokeWidth={2.5} />
           Empresa Júnior da UFABC · +200 projetos entregues
@@ -35,7 +35,7 @@ export const Hero = ({ onScrollToServices }: HeroProps) => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.1 }}
-          className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] font-medium leading-[0.95] tracking-tight text-balance max-w-5xl"
+          className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] font-medium leading-[0.95] tracking-tight text-balance max-w-5xl mx-auto"
         >
           Crescimento não é sorte.{" "}
           <em className="italic text-muted-foreground">É método.</em>
@@ -45,7 +45,7 @@ export const Hero = ({ onScrollToServices }: HeroProps) => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="mt-8 text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed"
+          className="mt-8 text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed mx-auto"
         >
           Consultoria estudantil de alto impacto da UFABC. Resolvemos os três gargalos que travam empresas em crescimento:
           <span className="text-foreground font-medium"> processos confusos, mercado nebuloso e dados sem direção.</span>
@@ -55,7 +55,7 @@ export const Hero = ({ onScrollToServices }: HeroProps) => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className="mt-10 flex flex-wrap items-center gap-4"
+          className="mt-10 flex flex-wrap items-center justify-center gap-4"
         >
           <Button variant="cta" size="xl" onClick={onScrollToServices}>
             Diagnóstico gratuito <ArrowRight className="w-5 h-5 ml-1" />
@@ -70,7 +70,7 @@ export const Hero = ({ onScrollToServices }: HeroProps) => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
-          className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 max-w-3xl pt-10 border-t border-border"
+          className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 max-w-3xl mx-auto pt-10 border-t border-border"
         >
           {[
             { value: "+200", label: "projetos entregues" },
