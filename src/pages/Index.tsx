@@ -104,16 +104,15 @@ const Index = () => {
         {/* About / Footer band */}
         <section id="sobre" className="bg-ink text-paper py-20 md:py-28 grain relative overflow-hidden">
           <div className="container max-w-5xl relative">
-            <div className="grid md:grid-cols-12 gap-10 items-end">
-              <div className="md:col-span-8">
-                <div className="flex items-center gap-2 text-sm uppercase tracking-[0.2em] text-lime mb-6">
+            <div className="max-w-3xl mx-auto text-center">
+                <div className="flex items-center justify-center gap-2 text-sm uppercase tracking-[0.2em] text-lime mb-6">
                   <span className="h-px w-8 bg-lime/60" />
                   Sobre a UFABC Jr.
                 </div>
                 <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-medium text-balance leading-[1.05]">
                   Empresa Júnior da UFABC. <em className="italic text-paper/60">Gente jovem, método sério.</em>
                 </h2>
-                <p className="mt-6 text-lg text-paper/70 max-w-2xl leading-relaxed">
+                <p className="mt-6 text-lg text-paper/70 max-w-2xl mx-auto leading-relaxed">
                   Somos consultores em formação na Universidade Federal do ABC — uma das universidades mais bem ranqueadas do Brasil.
                   Há mais de 14 anos no mercado, aplicamos rigor acadêmico, ferramentas atualizadas e olhar de fora para entregar
                   resultado de mercado a um custo que startups e PMEs conseguem absorver.
@@ -122,29 +121,6 @@ const Index = () => {
                   <span className="font-display font-semibold">4x</span>
                   <span className="text-paper/80">Empresa Júnior de Alto Impacto — reconhecimento consecutivo</span>
                 </div>
-              </div>
-              <div className="md:col-span-4 grid grid-cols-2 gap-x-6 gap-y-5">
-                <div>
-                  <div className="font-display text-3xl font-semibold text-lime">+200</div>
-                  <div className="text-xs text-paper/60 uppercase tracking-wider mt-1">projetos</div>
-                </div>
-                <div>
-                  <div className="font-display text-3xl font-semibold text-lime">+170</div>
-                  <div className="text-xs text-paper/60 uppercase tracking-wider mt-1">clientes atendidos</div>
-                </div>
-                <div>
-                  <div className="font-display text-3xl font-semibold text-lime">14+</div>
-                  <div className="text-xs text-paper/60 uppercase tracking-wider mt-1">anos de mercado</div>
-                </div>
-                <div>
-                  <div className="font-display text-3xl font-semibold text-lime">97%</div>
-                  <div className="text-xs text-paper/60 uppercase tracking-wider mt-1">NPS</div>
-                </div>
-                <div className="col-span-2">
-                  <div className="font-display text-3xl font-semibold text-lime">95%</div>
-                  <div className="text-xs text-paper/60 uppercase tracking-wider mt-1">CSAT</div>
-                </div>
-              </div>
             </div>
           </div>
         </section>
