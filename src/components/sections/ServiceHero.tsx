@@ -16,8 +16,9 @@ export const ServiceHero = ({ eyebrow, headline, subheadline, Icon }: ServiceHer
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
+          className="text-center"
         >
-          <div className="flex items-center gap-3 mb-8">
+          <div className="flex items-center justify-center gap-3 mb-8">
             <div className="w-11 h-11 rounded-xl bg-ink text-lime flex items-center justify-center">
               <Icon className="w-5 h-5" strokeWidth={1.75} />
             </div>
@@ -26,10 +27,10 @@ export const ServiceHero = ({ eyebrow, headline, subheadline, Icon }: ServiceHer
             </span>
           </div>
 
-          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium leading-[1.0] tracking-tight text-balance mb-6 max-w-4xl">
+          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium leading-[1.0] tracking-tight text-balance mb-6 max-w-4xl mx-auto">
             {headline}
           </h1>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed">
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed mx-auto">
             {subheadline}
           </p>
         </motion.div>

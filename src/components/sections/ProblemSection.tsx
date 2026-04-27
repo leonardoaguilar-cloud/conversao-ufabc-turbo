@@ -19,12 +19,13 @@ export const ProblemSection = ({ headline, pains }: ProblemSectionProps) => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.6 }}
+          className="text-center"
         >
-          <div className="flex items-center gap-2 text-sm uppercase tracking-[0.2em] text-muted-foreground mb-6">
+          <div className="flex items-center justify-center gap-2 text-sm uppercase tracking-[0.2em] text-muted-foreground mb-6">
             <span className="h-px w-8 bg-foreground/30" />
             O problema
           </div>
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-medium text-balance leading-[1.05] mb-12 max-w-3xl">
+          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-medium text-balance leading-[1.05] mb-12 max-w-3xl mx-auto">
             {headline}
           </h2>
         </motion.div>
