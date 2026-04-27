@@ -25,15 +25,15 @@ export const Navbar = ({ onCTA }: NavbarProps) => {
             U
           </div>
           <div className="leading-none">
-            <div className="font-display font-semibold text-lg tracking-tight">UFABC Jr.</div>
+            <div className="font-display font-semibold text-lg tracking-tight text-lime">UFABC Jr.</div>
             <div className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground">consultoria</div>
           </div>
         </a>
 
         <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-foreground/80">
-          <a href="#servicos" className="hover:text-foreground transition-colors">Serviços</a>
-          <a href="#sobre" className="hover:text-foreground transition-colors">Sobre</a>
-          <a href="#contato" className="hover:text-foreground transition-colors">Contato</a>
+          <a href="#servicos" className="transition-colors text-lime">Serviços</a>
+          <a href="#sobre" className="transition-colors text-lime">Sobre</a>
+          <a href="#contato" className="transition-colors text-lime">Contato</a>
         </nav>
 
         <Button variant="cta" size="default" onClick={onCTA}>
