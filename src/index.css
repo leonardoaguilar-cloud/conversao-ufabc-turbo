@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,800&family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -8,51 +8,50 @@
 
 @layer base {
   :root {
-    --background: 40 33% 97%;
-    --foreground: 222 47% 11%;
+    --background: 0 0% 96%;
+    --foreground: 176 79% 21%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222 47% 11%;
+    --card-foreground: 176 79% 21%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222 47% 11%;
+    --popover-foreground: 176 79% 21%;
 
-    /* Navy deep — institutional, trustworthy */
-    --primary: 222 47% 11%;
-    --primary-foreground: 40 33% 97%;
+    /* UFABC Jr. palette — green, graphite, white, yellow and deep teal */
+    --primary: 176 79% 21%;
+    --primary-foreground: 0 0% 96%;
 
-    --secondary: 40 20% 92%;
-    --secondary-foreground: 222 47% 11%;
+    --secondary: 107 45% 70%;
+    --secondary-foreground: 176 79% 21%;
 
-    --muted: 40 15% 90%;
-    --muted-foreground: 222 15% 40%;
+    --muted: 108 38% 86%;
+    --muted-foreground: 0 0% 25%;
 
-    /* Lime accent — growth, energy, action */
-    --accent: 75 85% 55%;
-    --accent-foreground: 222 47% 11%;
+    --accent: 43 88% 60%;
+    --accent-foreground: 176 79% 17%;
 
     --destructive: 0 75% 50%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 222 15% 88%;
-    --input: 222 15% 88%;
-    --ring: 222 47% 11%;
+    --border: 108 28% 78%;
+    --input: 108 28% 78%;
+    --ring: 176 79% 21%;
 
     --radius: 0.75rem;
 
     /* Custom tokens */
-    --ink: 222 47% 8%;
-    --paper: 40 33% 97%;
-    --paper-warm: 38 40% 94%;
-    --lime: 75 85% 55%;
-    --lime-soft: 75 70% 88%;
+    --ink: 0 0% 22%;
+    --paper: 0 0% 96%;
+    --paper-warm: 108 45% 76%;
+    --lime: 43 88% 60%;
+    --lime-soft: 108 45% 76%;
     --danger-soft: 0 70% 96%;
 
-    --gradient-hero: radial-gradient(ellipse at top left, hsl(75 85% 55% / 0.15), transparent 50%), radial-gradient(ellipse at bottom right, hsl(222 47% 11% / 0.08), transparent 50%);
-    --gradient-ink: linear-gradient(135deg, hsl(222 47% 11%), hsl(222 47% 18%));
-    --shadow-editorial: 0 1px 3px hsl(222 47% 11% / 0.04), 0 20px 60px -20px hsl(222 47% 11% / 0.15);
-    --shadow-card: 0 1px 2px hsl(222 47% 11% / 0.04), 0 8px 24px -12px hsl(222 47% 11% / 0.08);
-    --shadow-lime: 0 10px 40px -10px hsl(75 85% 55% / 0.5);
+    --gradient-hero: radial-gradient(ellipse at top left, hsl(107 45% 70% / 0.38), transparent 52%), radial-gradient(ellipse at bottom right, hsl(43 88% 60% / 0.22), transparent 48%);
+    --gradient-ink: linear-gradient(135deg, hsl(176 79% 21%), hsl(0 0% 22%));
+    --shadow-editorial: 0 1px 3px hsl(176 79% 21% / 0.06), 0 20px 60px -20px hsl(176 79% 21% / 0.22);
+    --shadow-card: 0 1px 2px hsl(176 79% 21% / 0.05), 0 8px 24px -12px hsl(176 79% 21% / 0.12);
+    --shadow-lime: 0 10px 40px -10px hsl(43 88% 60% / 0.55);
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -76,14 +75,14 @@
 
   body {
     @apply bg-background text-foreground antialiased;
-    font-family: 'Inter', system-ui, sans-serif;
+    font-family: 'Montserrat', system-ui, sans-serif;
     font-feature-settings: 'ss01', 'cv11';
   }
 
   h1, h2, h3, h4, .font-display {
-    font-family: 'Fraunces', Georgia, serif;
+    font-family: 'Montserrat', system-ui, sans-serif;
     font-feature-settings: 'ss01';
-    letter-spacing: -0.02em;
+    letter-spacing: 0;
   }
 }
 
