@@ -25,7 +25,7 @@ export const Navbar = ({ onCTA }: NavbarProps) => {
           <img
             src={ufabcLogo}
             alt="UFABC Jr."
-            className="h-10 w-auto object-contain md:h-12"
+            className="h-8 w-auto object-contain md:h-10"
           />
         </a>
 
