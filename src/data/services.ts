@@ -47,7 +47,7 @@ export const services: ServiceData[] = [
   {
     id: "processos",
     tab: "Mapeamento de Processos",
-    eyebrow: "Serviço 01 — Operação",
+    eyebrow: "Serviço 01 — Mapeamento de processos",
     Icon: Workflow,
     hero: {
       headline: "Sua empresa perde dinheiro e tempo com processos ineficientes?",
