@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import ufabcLogo from "@/assets/logo-horizontal-ufabc-jr.webp";
 import { useEffect, useState } from "react";
 
 interface NavbarProps {
@@ -20,14 +21,12 @@ export const Navbar = ({ onCTA }: NavbarProps) => {
       }`}
     >
       <div className="container max-w-7xl flex items-center justify-between h-16 md:h-20 bg-ink">
-        <a href="#top" className="flex items-center gap-2 group">
-          <div className="w-9 h-9 rounded-lg bg-ink text-lime flex items-center justify-center font-display font-bold text-lg group-hover:bg-lime group-hover:text-ink transition-colors">
-            U
-          </div>
-          <div className="leading-none">
-            <div className="font-display font-semibold text-lg tracking-tight text-lime">UFABC Jr.</div>
-            <div className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground">consultoria</div>
-          </div>
+        <a href="#top" className="flex items-center" aria-label="UFABC Jr. - início">
+          <img
+            src={ufabcLogo}
+            alt="UFABC Jr."
+            className="h-10 w-auto object-contain md:h-12"
+          />
         </a>
 
         <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-foreground/80">
