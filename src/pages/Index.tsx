@@ -103,9 +103,10 @@ const Index = () => {
 
         {/* About / Footer band */}
         <section id="sobre" className="bg-ink text-paper py-20 md:py-28 grain relative overflow-hidden">
-          <div className="container max-w-5xl relative">
-            <div className="max-w-3xl mx-auto text-center">
-                <div className="flex items-center justify-center gap-2 text-sm uppercase tracking-[0.2em] text-lime mb-6">
+          <div className="container max-w-6xl relative">
+            <div className="grid gap-12 lg:grid-cols-[minmax(0,0.95fr)_minmax(320px,0.75fr)] lg:items-center">
+              <div className="max-w-3xl text-left">
+                <div className="flex items-center gap-2 text-sm uppercase tracking-[0.2em] text-lime mb-6">
                   <span className="h-px w-8 bg-lime/60" />
                   Sobre a UFABC Jr.
                 </div>
@@ -121,6 +122,8 @@ const Index = () => {
                   <span className="font-display font-semibold">4x</span>
                   <span className="text-paper/80">Empresa Júnior de Alto Impacto — reconhecimento consecutivo</span>
                 </div>
+              </div>
+              <div className="hidden min-h-[360px] lg:block" aria-hidden="true" />
             </div>
           </div>
         </section>
