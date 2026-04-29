@@ -50,9 +50,9 @@ export const services: ServiceData[] = [
     eyebrow: "Serviço 01 — Operação",
     Icon: Workflow,
     hero: {
-      headline: "Seus processos estão travando seu crescimento — e você provavelmente ainda não sabe onde.",
+      headline: "Sua empresa perde dinheiro e tempo com processos ineficientes?",
       subheadline:
-        "Identificamos os gargalos que consomem tempo, dinheiro e produtividade na sua operação — com metodologia acadêmica e mais de 210 projetos de experiência.",
+        "Mapeamos e otimizamos sua operação em poucas semanas.",
     },
     problem: {
       headline: "Crescimento travado por processos obsoletos ou não documentados.",
