@@ -26,6 +26,8 @@ const previewHighlights: Record<string, string[]> = {
   ],
 };
 
+const trustedCompanies = ["Continental", "Samsung", "Renova Energia", "FARO FOOD", "KAP"];
+
 const Index = () => {
   const servicesRef = useRef<HTMLDivElement>(null);
   const ctaRef = useRef<HTMLDivElement>(null);
@@ -46,17 +48,28 @@ const Index = () => {
         <Hero onScrollToServices={scrollToServices} />
 
         {/* Logo strip / trust */}
-        <section className="border-y bg-paper-warm/50 py-8 overflow-hidden bg-[sidebar-accent-foreground] border-neutral-100 bg-background">
-          <div className="container max-w-6xl relative bg-background border-background">
+        <section className="border-y py-8 overflow-hidden border-neutral-100 bg-background">
+          <div className="container max-w-7xl relative bg-background border-background">
             <div className="text-center text-xs uppercase tracking-[0.25em] text-muted-foreground mb-4">
               Empresas que confiaram nos nossos consultores
             </div>
-            <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-3 opacity-60">
-              {["Continental", "Samsung", "Renova Energia", "FARO FOOD", "KAP"].map((n) => (
-                <span key={n} className="font-display text-xl md:text-2xl font-medium tracking-tight text-ink">
-                  {n}
-                </span>
-              ))}
+            <div className="relative mx-auto w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+              <motion.div
+                className="flex w-max items-center gap-5 opacity-70"
+                animate={{ x: [0, -520] }}
+                transition={{ duration: 18, repeat: Infinity, ease: "linear" }}
+              >
+                {[...trustedCompanies, ...trustedCompanies, ...trustedCompanies].map((n, index) => (
+                  <div
+                    key={`${n}-${index}`}
+                    className="flex h-20 w-56 shrink-0 items-center justify-center rounded-md border border-border bg-background px-8"
+                  >
+                    <span className="font-display text-xl md:text-2xl font-medium tracking-tight text-ink whitespace-nowrap">
+                      {n}
+                    </span>
+                  </div>
+                ))}
+              </motion.div>
             </div>
           </div>
         </section>
