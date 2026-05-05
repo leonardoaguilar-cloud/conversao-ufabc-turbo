@@ -16,11 +16,11 @@ export const Navbar = ({ onCTA }: NavbarProps) => {
 
   return (
     <header
-      className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-background/80 backdrop-blur-lg border-b border-border" : "bg-transparent"
+      className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 bg-ink ${
+        scrolled ? "backdrop-blur-lg border-b border-border" : ""
       }`}
     >
-      <div className="container max-w-7xl flex items-center justify-between h-16 md:h-20 bg-ink">
+      <div className="w-full flex items-center justify-between h-16 md:h-20 px-4 md:px-6">
         <a href="#top" className="flex items-center" aria-label="UFABC Jr. - início">
           <img
             src={ufabcLogo}
