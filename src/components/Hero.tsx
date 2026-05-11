@@ -47,8 +47,8 @@ export const Hero = ({ onScrollToServices }: HeroProps) => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="mt-8 text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed mx-auto"
         >
-          Consultoria estudantil de alto impacto da UFABC. Resolvemos os três gargalos que travam empresas em crescimento:
-          <span className="text-foreground font-medium"> processos confusos, mercado nebuloso e dados sem direção.</span>
+          Somos uma consultoria da Universidade Federal do ABC especializada em gestão de processos. Resolvemos os três gargalos que travam empresas em crescimento:
+          <span className="text-foreground font-medium"> processos ineficientes, entendimento de mercado e dados desorganizados.</span>
         </motion.p>
 
         <motion.div
