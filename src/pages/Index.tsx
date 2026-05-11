@@ -6,6 +6,7 @@ import { ServicePreviewCard } from "@/components/sections/ServicePreviewCard";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { services } from "@/data/services";
 import { Mail, MapPin, Phone } from "lucide-react";
+import samsungLogo from "@/assets/logo-samsung.png";
 
 // Quick highlights shown on each preview card (curated from each service's benefits)
 const previewHighlights: Record<string, string[]> = {
@@ -26,7 +27,13 @@ const previewHighlights: Record<string, string[]> = {
   ],
 };
 
-const trustedCompanies = ["Continental", "Samsung", "Renova Energia", "FARO FOOD", "KAP"];
+const trustedCompanies: { name: string; logo?: string }[] = [
+  { name: "Continental" },
+  { name: "Samsung", logo: samsungLogo },
+  { name: "Renova Energia" },
+  { name: "FARO FOOD" },
+  { name: "KAP" },
+];
 
 const Index = () => {
   const servicesRef = useRef<HTMLDivElement>(null);
@@ -59,14 +66,18 @@ const Index = () => {
                 animate={{ x: [0, -520] }}
                 transition={{ duration: 18, repeat: Infinity, ease: "linear" }}
               >
-                {[...trustedCompanies, ...trustedCompanies, ...trustedCompanies].map((n, index) => (
+                {[...trustedCompanies, ...trustedCompanies, ...trustedCompanies].map((company, index) => (
                   <div
-                    key={`${n}-${index}`}
+                    key={`${company.name}-${index}`}
                     className="flex h-20 w-56 shrink-0 items-center justify-center rounded-md border border-border bg-background px-8"
                   >
-                    <span className="font-display text-xl md:text-2xl font-medium tracking-tight text-ink whitespace-nowrap">
-                      {n}
-                    </span>
+                    {company.logo ? (
+                      <img src={company.logo} alt={company.name} className="max-h-12 w-auto object-contain" />
+                    ) : (
+                      <span className="font-display text-xl md:text-2xl font-medium tracking-tight text-ink whitespace-nowrap">
+                        {company.name}
+                      </span>
+                    )}
                   </div>
                 ))}
               </motion.div>
