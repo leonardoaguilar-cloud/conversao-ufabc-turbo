@@ -156,6 +156,19 @@ const Index = () => {
                   <span className="font-display font-semibold">4x</span>
                   <span className="text-paper/80">Empresa Júnior de Alto Impacto — reconhecimento consecutivo</span>
                 </div>
+
+                <div className="mt-10 grid grid-cols-3 gap-4 md:gap-10 max-w-2xl pt-10 border-t border-paper/10">
+                  {[
+                    { value: "+200", label: "projetos entregues" },
+                    { value: "+170", label: "clientes atendidos" },
+                    { value: "+14 anos", label: "no mercado" },
+                  ].map((s, i) => (
+                    <div key={i}>
+                      <div className="font-display text-2xl md:text-4xl font-semibold tracking-tight text-paper">{s.value}</div>
+                      <div className="text-xs md:text-sm text-paper/60 mt-1">{s.label}</div>
+                    </div>
+                  ))}
+                </div>
               </div>
               <div className="hidden min-h-[360px] lg:block" aria-hidden="true" />
             </div>
