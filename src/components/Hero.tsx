@@ -45,7 +45,7 @@ export const Hero = ({ onScrollToServices }: HeroProps) => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="mt-8 text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed mx-auto"
+          className="mt-8 text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed mx-auto text-justify"
         >
           Somos uma consultoria da Universidade Federal do ABC especializada em gestão de processos. Resolvemos os três gargalos que travam empresas em crescimento:
           <span className="text-foreground font-medium"> processos ineficientes, entendimento de mercado e dados desorganizados.</span>
