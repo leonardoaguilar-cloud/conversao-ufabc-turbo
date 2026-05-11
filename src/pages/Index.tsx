@@ -109,7 +109,7 @@ const Index = () => {
                 <span className="h-px w-8 bg-foreground/30" />
                 NOSSOS SERVIÇOS
               </div>
-              <h2 className="font-display md:text-5xl lg:text-6xl font-medium leading-[1.0] text-balance text-2xl">
+              <h2 className="font-display text-5xl font-medium leading-[1.0] text-balance">
                 Três frentes. <em className="italic text-muted-foreground">Um único objetivo:</em> destravar seu crescimento.
               </h2>
               <p className="mt-6 text-muted-foreground max-w-2xl mx-auto leading-relaxed text-sm">
