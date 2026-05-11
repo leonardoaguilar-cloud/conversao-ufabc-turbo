@@ -105,15 +105,15 @@ const Index = () => {
               transition={{ duration: 0.6 }}
               className="max-w-3xl mx-auto mb-14 text-center"
             >
-              <div className="flex items-center justify-center gap-2 text-sm uppercase tracking-[0.2em] text-muted-foreground mb-6">
+              <div className="flex items-center justify-center gap-2 uppercase tracking-[0.2em] text-muted-foreground mb-6 font-bold text-4xl">
                 <span className="h-px w-8 bg-foreground/30" />
-                Nossos serviços
+                NOSSOS SERVIÇOS
               </div>
-              <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-medium leading-[1.0] text-balance">
+              <h2 className="font-display md:text-5xl lg:text-6xl font-medium leading-[1.0] text-balance text-2xl">
                 Três frentes. <em className="italic text-muted-foreground">Um único objetivo:</em> destravar seu crescimento.
               </h2>
-              <p className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                Escolha o serviço que mais conversa com o momento da sua empresa. Cada um tem sua própria página com diagnóstico, método, benefícios e cases.
+              <p className="mt-6 text-muted-foreground max-w-2xl mx-auto leading-relaxed text-sm">
+                Três frentes. Um único objetivo: destravar seu crescimento.
               </p>
             </motion.div>
 
