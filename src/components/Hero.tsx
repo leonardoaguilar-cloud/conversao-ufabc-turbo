@@ -70,7 +70,7 @@ export const Hero = ({ onScrollToServices }: HeroProps) => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
-          className="mt-20 grid grid-cols-2 md:grid-cols-5 gap-8 md:gap-10 max-w-4xl mx-auto pt-10 border-t border-border"
+          className="mt-20 grid grid-cols-5 gap-4 md:gap-10 max-w-4xl mx-auto pt-10 border-t border-border"
         >
           {[
             { value: "+200", label: "projetos entregues" },
