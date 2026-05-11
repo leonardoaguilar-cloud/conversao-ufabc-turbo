@@ -113,7 +113,7 @@ const Index = () => {
                 Três frentes. <em className="italic text-muted-foreground">Um único objetivo:</em> destravar seu crescimento.
               </h2>
               <p className="mt-6 text-muted-foreground max-w-2xl mx-auto leading-relaxed text-sm">
-                Três frentes. Um único objetivo: destravar seu crescimento.
+                
               </p>
             </motion.div>
 
