@@ -80,7 +80,7 @@ export const Hero = ({ onScrollToServices }: HeroProps) => {
             { value: "95%", label: "CSAT" },
           ].map((s, i) => (
             <div key={i}>
-              <div className="font-display md:text-4xl font-semibold tracking-tight text-2xl">{s.value}</div>
+              <div className="font-display text-2xl font-semibold tracking-tight">{s.value}</div>
               <div className="text-xs md:text-sm text-muted-foreground mt-1">{s.label}</div>
             </div>
           ))}
