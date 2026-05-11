@@ -7,6 +7,13 @@ import { ContactSection } from "@/components/sections/ContactSection";
 import { services } from "@/data/services";
 import { Mail, MapPin, Phone } from "lucide-react";
 import samsungLogo from "@/assets/logo-samsung.png";
+import continentalLogo from "@/assets/logo-continental.png";
+import renovaLogo from "@/assets/logo-renova.png";
+import dasaLogo from "@/assets/logo-dasa.jpg";
+import casLogo from "@/assets/logo-cas.png";
+import adventistaLogo from "@/assets/logo-adventista.png";
+import shopperLogo from "@/assets/logo-shopper.png";
+import aperamLogo from "@/assets/logo-aperam.webp";
 
 // Quick highlights shown on each preview card (curated from each service's benefits)
 const previewHighlights: Record<string, string[]> = {
@@ -28,11 +35,14 @@ const previewHighlights: Record<string, string[]> = {
 };
 
 const trustedCompanies: { name: string; logo?: string }[] = [
-  { name: "Continental" },
+  { name: "Continental", logo: continentalLogo },
   { name: "Samsung", logo: samsungLogo },
-  { name: "Renova Energia" },
-  { name: "FARO FOOD" },
-  { name: "KAP" },
+  { name: "Renova Energia", logo: renovaLogo },
+  { name: "Dasa", logo: dasaLogo },
+  { name: "CAS Tecnologia", logo: casLogo },
+  { name: "Igreja Adventista do Sétimo Dia", logo: adventistaLogo },
+  { name: "Shopper", logo: shopperLogo },
+  { name: "Aperam", logo: aperamLogo },
 ];
 
 const Index = () => {
