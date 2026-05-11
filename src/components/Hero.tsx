@@ -21,15 +21,6 @@ export const Hero = ({ onScrollToServices }: HeroProps) => {
       />
 
       <div className="container max-w-6xl relative text-center">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
-          className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-card border border-border text-xs font-medium text-muted-foreground mb-8 mx-auto"
-        >
-          <Sparkles className="w-3.5 h-3.5 text-lime" strokeWidth={2.5} />
-          Empresa Júnior da UFABC · +200 projetos entregues
-        </motion.div>
 
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
