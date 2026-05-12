@@ -136,13 +136,14 @@ export const services: ServiceData[] = [
   // ============ ANÁLISE DE MERCADO ============
   {
     id: "mercado",
-    tab: "Análise de Mercado",
+    tab: "Pesquisa de Mercado",
     eyebrow: "Serviço 02 — Estratégia",
     Icon: Target,
     hero: {
       headline: "Você está tomando decisões estratégicas sem dados confiáveis de mercado?",
       subheadline:
         "Entenda seu público, seus concorrentes e as oportunidades reais do seu setor — com pesquisas conduzidas por alunos da UFABC com suporte de professores doutores.",
+      cta: "Descubra oportunidades no mercado",
     },
     problem: {
       headline: "Incerteza na entrada em novos mercados ou no lançamento de produtos custa caro.",
