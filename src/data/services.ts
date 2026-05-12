@@ -8,6 +8,7 @@ export interface ServiceData {
   hero: {
     headline: string;
     subheadline: string;
+    cta: string;
   };
   problem: {
     headline: string;
