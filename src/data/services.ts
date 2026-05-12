@@ -232,6 +232,7 @@ export const services: ServiceData[] = [
       headline: "Você tem dados, mas ainda não consegue transformá-los em decisões.",
       subheadline:
         "Criamos dashboards e análises que transformam o caos de planilhas em inteligência real de negócio — acessível, visual e atualizado em tempo real.",
+      cta: "Transforme dados em decisões",
     },
     problem: {
       headline: "Dados existem, mas não geram decisões — são subutilizados ou incompreensíveis.",
