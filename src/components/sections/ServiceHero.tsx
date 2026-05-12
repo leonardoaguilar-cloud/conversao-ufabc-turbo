@@ -1,14 +1,17 @@
 import { motion } from "framer-motion";
-import { LucideIcon } from "lucide-react";
+import { ArrowRight, LucideIcon } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 interface ServiceHeroProps {
   eyebrow: string;
   headline: string;
   subheadline: string;
   Icon: LucideIcon;
+  ctaLabel?: string;
+  onCTA?: () => void;
 }
 
-export const ServiceHero = ({ eyebrow, headline, subheadline, Icon }: ServiceHeroProps) => {
+export const ServiceHero = ({ eyebrow, headline, subheadline, Icon, ctaLabel, onCTA }: ServiceHeroProps) => {
   return (
     <section className="pt-16 pb-12 md:pt-24 md:pb-20 border-t border-border bg-background">
       <div className="container max-w-5xl">
@@ -33,6 +36,15 @@ export const ServiceHero = ({ eyebrow, headline, subheadline, Icon }: ServiceHer
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed mx-auto">
             {subheadline}
           </p>
+
+          {ctaLabel && (
+            <div className="mt-8 flex justify-center">
+              <Button size="lg" onClick={onCTA} className="group">
+                {ctaLabel}
+                <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" strokeWidth={2} />
+              </Button>
+            </div>
+          )}
         </motion.div>
       </div>
     </section>
