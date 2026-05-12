@@ -8,7 +8,7 @@ interface HeroProps {
 
 export const Hero = ({ onScrollToServices }: HeroProps) => {
   return (
-    <section className="relative overflow-hidden pt-32 md:pt-40 pb-8 md:pb-12 grain">
+    <section className="relative overflow-hidden pt-20 md:pt-24 pb-4 md:pb-6 grain">
       <div className="absolute inset-0 bg-gradient-hero pointer-events-none" />
 
       {/* Decorative grid */}
@@ -26,7 +26,7 @@ export const Hero = ({ onScrollToServices }: HeroProps) => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.1 }}
-          className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium leading-[0.98] tracking-tight text-balance max-w-5xl mx-auto"
+          className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium leading-[0.98] tracking-tight text-balance max-w-4xl mx-auto"
         >
           Crescimento não é sorte.{" "}
           <em className="italic text-muted-foreground">É método.</em>
@@ -36,7 +36,7 @@ export const Hero = ({ onScrollToServices }: HeroProps) => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="mt-8 text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed mx-auto text-justify"
+          className="mt-6 text-base md:text-lg text-muted-foreground max-w-xl leading-relaxed mx-auto text-justify"
         >
           Somos uma consultoria da Universidade Federal do ABC especializada em gestão de processos. Resolvemos os três gargalos que travam empresas em crescimento:
           <span className="text-foreground font-medium"> processos ineficientes, entendimento de mercado e dados desorganizados.</span>
@@ -46,12 +46,12 @@ export const Hero = ({ onScrollToServices }: HeroProps) => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className="mt-10 flex flex-wrap items-center justify-center gap-4"
+          className="mt-8 flex flex-wrap items-center justify-center gap-3"
         >
-          <Button variant="cta" size="xl" onClick={onScrollToServices}>
-            Diagnóstico gratuito <ArrowRight className="w-5 h-5 ml-1" />
+          <Button variant="cta" size="lg" onClick={onScrollToServices}>
+            Diagnóstico gratuito <ArrowRight className="w-4 h-4 ml-1" />
           </Button>
-          <Button variant="ghost" size="xl" onClick={onScrollToServices}>
+          <Button variant="ghost" size="lg" onClick={onScrollToServices}>
             Ver os serviços
           </Button>
         </motion.div>
