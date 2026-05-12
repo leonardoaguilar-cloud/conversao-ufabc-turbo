@@ -54,6 +54,8 @@ const ServicePage = () => {
             headline={service.hero.headline}
             subheadline={service.hero.subheadline}
             Icon={service.Icon}
+            ctaLabel={service.hero.cta}
+            onCTA={scrollToCTA}
           />
           <ProblemSection headline={service.problem.headline} pains={service.problem.pains} />
           <SolutionSection
