@@ -8,6 +8,7 @@ export interface ServiceData {
   hero: {
     headline: string;
     subheadline: string;
+    cta: string;
   };
   problem: {
     headline: string;
@@ -53,6 +54,7 @@ export const services: ServiceData[] = [
       headline: "Sua empresa perde dinheiro e tempo com processos ineficientes?",
       subheadline:
         "Mapeamos e otimizamos sua operação em poucas semanas.",
+      cta: "Quero diagnosticar minha operação",
     },
     problem: {
       headline: "Crescimento travado por processos obsoletos ou não documentados.",
@@ -134,13 +136,14 @@ export const services: ServiceData[] = [
   // ============ ANÁLISE DE MERCADO ============
   {
     id: "mercado",
-    tab: "Análise de Mercado",
+    tab: "Pesquisa de Mercado",
     eyebrow: "Serviço 02 — Estratégia",
     Icon: Target,
     hero: {
       headline: "Você está tomando decisões estratégicas sem dados confiáveis de mercado?",
       subheadline:
         "Entenda seu público, seus concorrentes e as oportunidades reais do seu setor — com pesquisas conduzidas por alunos da UFABC com suporte de professores doutores.",
+      cta: "Descubra oportunidades no mercado",
     },
     problem: {
       headline: "Incerteza na entrada em novos mercados ou no lançamento de produtos custa caro.",
@@ -229,6 +232,7 @@ export const services: ServiceData[] = [
       headline: "Você tem dados, mas ainda não consegue transformá-los em decisões.",
       subheadline:
         "Criamos dashboards e análises que transformam o caos de planilhas em inteligência real de negócio — acessível, visual e atualizado em tempo real.",
+      cta: "Transforme dados em decisões",
     },
     problem: {
       headline: "Dados existem, mas não geram decisões — são subutilizados ou incompreensíveis.",
