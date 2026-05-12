@@ -54,6 +54,7 @@ export const services: ServiceData[] = [
       headline: "Sua empresa perde dinheiro e tempo com processos ineficientes?",
       subheadline:
         "Mapeamos e otimizamos sua operação em poucas semanas.",
+      cta: "Quero diagnosticar minha operação",
     },
     problem: {
       headline: "Crescimento travado por processos obsoletos ou não documentados.",
