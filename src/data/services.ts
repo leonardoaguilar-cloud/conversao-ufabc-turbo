@@ -53,7 +53,7 @@ export const services: ServiceData[] = [
     hero: {
       headline: "Sua empresa perde dinheiro e tempo com processos ineficientes?",
       subheadline:
-        "Mapeamos e otimizamos sua operação em poucas semanas.",
+        "Mapeamos e otimizamos processos para reduzir falhas, aumentar a eficiência e melhorar os resultados da operação.",
       cta: "Quero diagnosticar minha operação",
     },
     problem: {
