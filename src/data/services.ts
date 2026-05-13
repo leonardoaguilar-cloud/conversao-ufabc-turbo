@@ -235,7 +235,7 @@ export const services: ServiceData[] = [
       cta: "Transforme dados em decisões",
     },
     problem: {
-      headline: "Dados existem, mas não geram decisões — são subutilizados ou incompreensíveis.",
+      headline: "Dados existem, mas não geram decisões pois são subutilizados ou incompreensíveis.",
       pains: [
         { text: "Planilhas e sistemas acumulam informação, mas não mostram claramente o que fazer." },
         { text: "Relatórios manuais chegam tarde e dificultam decisões rápidas." },
