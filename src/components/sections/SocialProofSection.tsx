@@ -24,7 +24,7 @@ export const SocialProofSection = ({ cases }: SocialProofProps) => {
           transition={{ duration: 0.6 }}
           className="max-w-3xl mx-auto mb-14 text-center"
         >
-          <div className="flex items-center justify-center gap-2 text-sm uppercase tracking-[0.2em] text-muted-foreground mb-6">
+          <div className="flex items-center justify-center gap-2 uppercase tracking-[0.2em] text-muted-foreground mb-6 font-bold text-xl">
             <span className="h-px w-8 bg-foreground/30" />
             Quem já cresceu com a gente
           </div>
