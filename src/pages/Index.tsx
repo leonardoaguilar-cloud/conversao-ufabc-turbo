@@ -14,6 +14,7 @@ import casLogo from "@/assets/logo-cas.png";
 import adventistaLogo from "@/assets/logo-adventista.png";
 import shopperLogo from "@/assets/logo-shopper.png";
 import aperamLogo from "@/assets/logo-aperam.webp";
+import teamPhoto from "@/assets/team-ufabcjr.jpeg";
 
 // Quick highlights shown on each preview card (curated from each service's benefits)
 const previewHighlights: Record<string, string[]> = {
@@ -137,8 +138,8 @@ const Index = () => {
 
         {/* About / Footer band */}
         <section id="sobre" className="bg-ink text-paper py-20 md:py-28 grain relative overflow-hidden">
-          <div className="container max-w-6xl relative">
-            <div className="grid gap-12 lg:grid-cols-[minmax(0,0.95fr)_minmax(320px,0.75fr)] lg:items-center">
+          <div className="container max-w-7xl relative lg:pl-4">
+            <div className="grid gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(320px,0.9fr)] lg:items-center">
               <div className="max-w-3xl text-left">
                 <div className="flex items-center gap-2 text-sm uppercase tracking-[0.2em] text-lime mb-6">
                   <span className="h-px w-8 bg-lime/60" />
@@ -168,7 +169,13 @@ const Index = () => {
                   ))}
                 </div>
               </div>
-              <div className="hidden min-h-[360px] lg:block" aria-hidden="true" />
+              <div className="hidden lg:flex justify-center items-center">
+                <img
+                  src={teamPhoto}
+                  alt="Equipe da UFABC Jr."
+                  className="w-full max-w-md rounded-2xl object-cover shadow-2xl"
+                />
+              </div>
             </div>
           </div>
         </section>
