@@ -13,7 +13,7 @@ interface ServiceHeroProps {
 
 export const ServiceHero = ({ eyebrow, headline, subheadline, Icon, ctaLabel, onCTA }: ServiceHeroProps) => {
   return (
-    <section className="pt-16 pb-12 md:pt-24 md:pb-20 border-t border-border bg-background">
+    <section className="pt-6 pb-12 md:pt-8 md:pb-20 border-t border-border bg-background">
       <div className="container max-w-5xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
