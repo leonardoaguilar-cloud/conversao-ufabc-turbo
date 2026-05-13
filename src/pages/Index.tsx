@@ -147,10 +147,8 @@ const Index = () => {
                 <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-medium text-balance leading-[1.05]">
                   Empresa Júnior da UFABC. <em className="italic text-paper/60">Gente jovem, método sério.</em>
                 </h2>
-                <p className="mt-6 text-lg text-paper/70 max-w-2xl mx-auto leading-relaxed">
-                  Somos consultores em formação na Universidade Federal do ABC — uma das universidades mais bem ranqueadas do Brasil.
-                  Há mais de 14 anos no mercado, aplicamos rigor acadêmico, ferramentas atualizadas e olhar de fora para entregar
-                  resultado de mercado a um custo que startups e PMEs conseguem absorver.
+                <p className="mt-6 text-lg text-paper/70 max-w-2xl mx-auto leading-relaxed text-justify">
+                  A UFABC jr. é uma empresa de consultoria formada por estudantes da Universidade Federal do ABC, conectando conhecimento acadêmico e visão de mercado para desenvolver soluções estratégicas para diversos perfis de empresas. Há mais de 14 anos, atuamos com foco em inovação, análise e resultado, entregando projetos de alta qualidade com uma abordagem acessível, personalizada e orientada ao crescimento dos nossos clientes.
                 </p>
                 <div className="mt-6 inline-flex items-center gap-3 rounded-full border border-lime/30 bg-lime/10 px-4 py-2 text-sm text-lime">
                   <span className="font-display font-semibold">4x</span>
@@ -164,7 +162,7 @@ const Index = () => {
                     { value: "+14 anos", label: "no mercado" },
                   ].map((s, i) => (
                     <div key={i}>
-                      <div className="font-display text-2xl md:text-4xl font-semibold tracking-tight text-paper">{s.value}</div>
+                      <div className="font-display md:text-4xl font-semibold tracking-tight text-paper text-2xl">{s.value}</div>
                       <div className="text-xs md:text-sm text-paper/60 mt-1">{s.label}</div>
                     </div>
                   ))}
