@@ -162,7 +162,7 @@ const Index = () => {
                     { value: "+14 anos", label: "no mercado" },
                   ].map((s, i) => (
                     <div key={i}>
-                      <div className="font-display md:text-4xl font-semibold tracking-tight text-paper text-2xl">{s.value}</div>
+                      <div className="font-display text-2xl md:text-2xl font-semibold tracking-tight text-paper">{s.value}</div>
                       <div className="text-xs md:text-sm text-paper/60 mt-1">{s.label}</div>
                     </div>
                   ))}
