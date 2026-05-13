@@ -20,7 +20,7 @@ const previewHighlights: Record<string, string[]> = {
   processos: [
     "Gargalos que custam tempo e dinheiro",
     "Processos documentados e replicáveis",
-    "Metodologia acadêmica + 210 projetos",
+    "Gestão eficiente da equipe",
   ],
   mercado: [
     "Público, concorrentes e oportunidades reais",
