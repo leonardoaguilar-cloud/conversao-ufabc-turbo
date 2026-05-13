@@ -29,7 +29,7 @@ const previewHighlights: Record<string, string[]> = {
   ],
   dados: [
     "Bases de dados organizadas",
-    "Planilhas transformadas em inteligência visual",
+    "Dashboards interativos e intuitivos",
     "BI e automação com metodologia rigorosa",
   ],
 };
