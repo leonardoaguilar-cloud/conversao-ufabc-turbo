@@ -25,16 +25,16 @@ export const SolutionSection = ({ eyebrow, headline, description, steps, Icon }:
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.6 }}
-            className="lg:col-span-5 lg:sticky lg:top-32"
+            className="lg:col-span-5"
           >
-            <div className="flex items-center gap-2 text-sm uppercase tracking-[0.2em] text-lime mb-6">
+            <div className="flex items-center gap-2 text-base md:text-lg uppercase tracking-[0.2em] text-lime mb-6 font-black">
               <span className="h-px w-8 bg-lime/60" />
               {eyebrow}
             </div>
             <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-medium text-balance leading-[1.08] mb-6">
               {headline}
             </h2>
-            <p className="text-lg text-paper/70 leading-relaxed max-w-md">{description}</p>
+            <p className="text-lg text-paper/70 leading-relaxed max-w-md text-justify">{description}</p>
 
             <div className="mt-10 inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-lime/10 border border-lime/30">
               <Icon className="w-9 h-9 text-lime" strokeWidth={1.5} />
