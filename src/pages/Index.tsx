@@ -68,7 +68,7 @@ const Index = () => {
         {/* Logo strip / trust */}
         <section className="border-y py-4 overflow-hidden border-neutral-100 bg-background">
           <div className="container max-w-7xl relative bg-background border-background">
-            <div className="text-center uppercase tracking-[0.25em] text-muted-foreground mb-4 text-lg font-bold text-emerald-950">
+            <div className="text-center uppercase tracking-[0.25em] text-muted-foreground mb-4 text-xl font-bold text-emerald-950">
               Empresas que confiaram nos nossos consultores
             </div>
             <div className="relative mx-auto w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
