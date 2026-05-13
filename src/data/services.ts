@@ -48,7 +48,7 @@ export const services: ServiceData[] = [
   {
     id: "processos",
     tab: "Mapeamento de Processos",
-    eyebrow: "Serviço 01 — Mapeamento de processos",
+    eyebrow: "Serviço 01 — Otimização",
     Icon: Workflow,
     hero: {
       headline: "Sua empresa perde dinheiro e tempo com processos ineficientes?",
@@ -231,7 +231,7 @@ export const services: ServiceData[] = [
     hero: {
       headline: "Você tem dados, mas ainda não consegue transformá-los em decisões.",
       subheadline:
-        "Criamos dashboards e análises que transformam o caos de planilhas em inteligência real de negócio — acessível, visual e atualizado em tempo real.",
+        "Entenda seu público, seus concorrentes e as oportunidades reais do seu setor para construir estratégias assertivas.",
       cta: "Transforme dados em decisões",
     },
     problem: {
