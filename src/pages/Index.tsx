@@ -28,7 +28,7 @@ const previewHighlights: Record<string, string[]> = {
     "Pesquisa com suporte de professores doutores",
   ],
   dados: [
-    "Processos eficientes",
+    "Processos automatizados",
     "Planilhas transformadas em inteligência visual",
     "BI e automação com metodologia rigorosa",
   ],
