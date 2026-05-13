@@ -28,7 +28,7 @@ const previewHighlights: Record<string, string[]> = {
     "Pesquisa com suporte de professores doutores",
   ],
   dados: [
-    "Dashboards e análises que o time usa",
+    "Processos eficientes",
     "Planilhas transformadas em inteligência visual",
     "BI e automação com metodologia rigorosa",
   ],
@@ -193,21 +193,21 @@ const Index = () => {
                 <Mail className="w-4 h-4 mt-1 text-lime shrink-0" strokeWidth={2} />
                 <div>
                   <div className="text-paper/40">E-mail</div>
-                  <div className="font-medium text-paper">contato@ufabcjr.com.br</div>
+                  <div className="font-medium text-paper">comercial@ufabcjr.com.br</div>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <Phone className="w-4 h-4 mt-1 text-lime shrink-0" strokeWidth={2} />
                 <div>
                   <div className="text-paper/40">Telefone / WhatsApp</div>
-                  <div className="font-medium text-paper">(11) 0000-0000</div>
+                  <div className="font-medium text-paper">(11) 95412-4779</div>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 mt-1 text-lime shrink-0" strokeWidth={2} />
                 <div>
                   <div className="text-paper/40">Onde estamos</div>
-                  <div className="font-medium text-paper">UFABC · Santo André / São Bernardo</div>
+                  <div className="font-medium text-paper">UFABC · Santo André</div>
                 </div>
               </div>
             </div>
