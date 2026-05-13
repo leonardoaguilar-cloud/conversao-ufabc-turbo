@@ -18,7 +18,7 @@ import aperamLogo from "@/assets/logo-aperam.webp";
 // Quick highlights shown on each preview card (curated from each service's benefits)
 const previewHighlights: Record<string, string[]> = {
   processos: [
-    "Gargalos que custam produtividade e dinheiro",
+    "Gargalos que custam tempo e dinheiro",
     "Processos documentados e replicáveis",
     "Metodologia acadêmica + 210 projetos",
   ],
