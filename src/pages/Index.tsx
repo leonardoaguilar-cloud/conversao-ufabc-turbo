@@ -25,7 +25,7 @@ const previewHighlights: Record<string, string[]> = {
   mercado: [
     "Público, concorrentes e oportunidades reais",
     "Decisões com menor risco e mais evidência",
-    "Pesquisa com suporte de professores doutores",
+    "Construa estratégias viáveis",
   ],
   dados: [
     "Bases de dados organizadas",
