@@ -56,7 +56,7 @@ export const ProblemSection = ({ headline, pains }: ProblemSectionProps) => {
           className="mt-12 flex items-center gap-3 text-muted-foreground"
         >
           <ArrowRight className="w-5 h-5" />
-          <span className="text-sm md:text-base italic font-display">Reconheceu o cenário? A boa notícia: dá pra resolver.</span>
+          <span className="text-sm italic font-display font-bold md:text-xl">Reconheceu o cenário? A boa notícia: dá pra resolver.</span>
         </motion.div>
       </div>
     </section>
