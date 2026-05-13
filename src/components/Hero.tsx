@@ -8,7 +8,7 @@ interface HeroProps {
 
 export const Hero = ({ onScrollToServices }: HeroProps) => {
   return (
-    <section className="relative overflow-hidden pt-20 md:pt-24 pb-4 md:pb-6 grain">
+    <section className="relative overflow-hidden pt-24 md:pt-32 pb-8 md:pb-12 grain">
       <div className="absolute inset-0 bg-gradient-hero pointer-events-none" />
 
       {/* Decorative grid */}
