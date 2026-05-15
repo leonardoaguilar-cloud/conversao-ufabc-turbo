@@ -68,16 +68,13 @@ const Index = () => {
         {/* Logo strip / trust */}
         <section className="border-y py-4 overflow-hidden border-neutral-100 bg-background">
           <div className="container max-w-7xl relative bg-background border-background">
-            <div className="text-center uppercase tracking-[0.25em] text-muted-foreground mb-4 text-xl font-bold text-emerald-950">
-              Empresas que confiaram nos nossos consultores
-            </div>
-            <div className="relative mx-auto w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+          <div className="relative mx-auto w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)] mb-4">
               <motion.div
                 className="flex w-max items-center gap-5 opacity-70"
-                animate={{ x: [0, -520] }}
-                transition={{ duration: 18, repeat: Infinity, ease: "linear" }}
+                animate={{ x: ["0%", "-50%"] }}
+                transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
               >
-                {[...trustedCompanies, ...trustedCompanies, ...trustedCompanies].map((company, index) => (
+                {[...trustedCompanies, ...trustedCompanies].map((company, index) => (
                   <div
                     key={`${company.name}-${index}`}
                     className="flex h-20 w-56 shrink-0 items-center justify-center rounded-md border border-border bg-background px-8"
@@ -92,6 +89,9 @@ const Index = () => {
                   </div>
                 ))}
               </motion.div>
+            </div>
+            <div className="text-center uppercase tracking-[0.25em] text-muted-foreground mt-4 text-xl font-bold text-emerald-950">
+              Empresas que confiaram nos nossos consultores
             </div>
           </div>
         </section>
