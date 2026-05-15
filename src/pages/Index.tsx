@@ -189,8 +189,7 @@ const Index = () => {
           <div className="container max-w-6xl grid gap-8 text-sm md:grid-cols-[1fr_auto] md:items-start">
             <div className="space-y-5">
               <div className="flex items-center gap-2">
-                <div className="w-8 h-8 rounded-md bg-lime text-ink flex items-center justify-center font-display font-bold">U</div>
-                <span className="font-display font-medium text-paper">UFABC Jr.</span>
+                <img src={ufabcjrLogo} alt="UFABC Jr." className="h-8 w-auto object-contain" />
                 <span className="text-paper/40">· Consultoria Empresarial</span>
               </div>
               <div>© {new Date().getFullYear()} UFABC Jr. Todos os direitos reservados.</div>
