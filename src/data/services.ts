@@ -114,7 +114,7 @@ export const services: ServiceData[] = [
       {
         client: "Lady Tecelagem",
         segment: "Empresa do ramo de vestuários",
-        result: "​Coeficiente de satisfação do cliente, medido de 0 a 100%.",
+        result: "​Coeficiente de satisfação do cliente (CSAT). Medido de 0 a 100%.",
         metric: "100%",
         quote: "Empresa familiar com 80 anos de mercado. Mapeamos 4 áreas da sua indústria, identificando gargalos processuais e aplicando melhorias que otimizaram a produção.",
       },
