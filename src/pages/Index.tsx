@@ -15,6 +15,7 @@ import adventistaLogo from "@/assets/logo-adventista.png";
 import shopperLogo from "@/assets/logo-shopper.png";
 import aperamLogo from "@/assets/logo-aperam.webp";
 import teamPhoto from "@/assets/team-ufabcjr.jpeg";
+import ufabcjrLogo from "@/assets/logo-ufabcjr.webp";
 
 // Quick highlights shown on each preview card (curated from each service's benefits)
 const previewHighlights: Record<string, string[]> = {
