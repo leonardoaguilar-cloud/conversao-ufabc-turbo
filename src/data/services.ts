@@ -119,11 +119,11 @@ export const services: ServiceData[] = [
         quote: "Empresa familiar com 80 anos de mercado. Mapeamos 4 áreas da sua indústria, identificando gargalos processuais e aplicando melhorias que otimizaram a produção.",
       },
       {
-        client: "Clínica de Saúde",
-        segment: "Saúde · Multi-unidades",
-        result: "Padronizou atendimento entre 3 unidades e elevou NPS de 52 para 81.",
-        metric: "+29 NPS",
-        quote: "Hoje qualquer unidade nossa entrega o mesmo nível de serviço. Antes era loteria.",
+        client: "Precificar",
+        segment: "Indústria em comércio que atende mais de 1000 lojas no Brasil.",
+        result: "Áreas da indústria mapeadas e otimizadas.",
+        metric: "8",
+        quote: "Aplicamos as etapas AS-IS e TO-BE em todas as áreas da empresa, atigindo sucesso total ao conseguir otimizar não só sua produção mas todos seus processos internos. Atingimos 100% de ambos os indíces (CSAT e NPS).",
       },
     ],
     cta: {
