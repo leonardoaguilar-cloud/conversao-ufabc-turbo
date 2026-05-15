@@ -105,11 +105,11 @@ export const services: ServiceData[] = [
     },
     cases: [
       {
-        client: "Empresa de Logística",
-        segment: "Transporte · 45 funcionários",
-        result: "Reduziu o tempo de despacho em 42% após o redesenho dos fluxos operacionais.",
-        metric: "-42%",
-        quote: "Saímos do achismo. Hoje cada etapa tem dono e prazo. Isso mudou tudo.",
+        client: "CAS",
+        segment: "Empresa de serviços tecnológicos",
+        result: "​Índice de confiança dos nossos serviços. Representa o quanto o cliente recomenda nossos serviços de 0 a 100%.",
+        metric: "100%",
+        quote: "Esta empresa cliente seguiu conosco em um processo de fidelização e nos contratou para 6 projetos no total.",
       },
       {
         client: "Indústria Alimentícia",
