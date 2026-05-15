@@ -90,6 +90,9 @@ const Index = () => {
                 ))}
               </motion.div>
             </div>
+            <div className="text-center uppercase tracking-[0.25em] text-muted-foreground mt-4 text-xl font-bold text-emerald-950">
+              Empresas que confiaram nos nossos consultores
+            </div>
           </div>
         </section>
 
