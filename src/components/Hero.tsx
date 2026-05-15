@@ -4,9 +4,10 @@ import { ArrowRight, Sparkles } from "lucide-react";
 
 interface HeroProps {
   onScrollToServices: () => void;
+  onCTA?: () => void;
 }
 
-export const Hero = ({ onScrollToServices }: HeroProps) => {
+export const Hero = ({ onScrollToServices, onCTA }: HeroProps) => {
   return (
     <section className="relative overflow-hidden pt-24 md:pt-32 pb-8 md:pb-12 grain">
       <div className="absolute inset-0 bg-gradient-hero pointer-events-none" />
@@ -48,7 +49,7 @@ export const Hero = ({ onScrollToServices }: HeroProps) => {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="mt-8 flex flex-wrap items-center justify-center gap-3"
         >
-          <Button variant="cta" size="lg" onClick={onScrollToServices}>
+          <Button variant="cta" size="lg" onClick={onCTA ?? onScrollToServices}>
             Diagnóstico gratuito <ArrowRight className="w-4 h-4 ml-1" />
           </Button>
           <Button variant="ghost" size="lg" onClick={onScrollToServices}>

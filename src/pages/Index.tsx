@@ -63,7 +63,7 @@ const Index = () => {
       <Navbar onCTA={scrollToCTA} />
 
       <main>
-        <Hero onScrollToServices={scrollToServices} />
+        <Hero onScrollToServices={scrollToServices} onCTA={scrollToCTA} />
 
         {/* Logo strip / trust */}
         <section className="border-y py-4 overflow-hidden border-neutral-100 bg-background">
