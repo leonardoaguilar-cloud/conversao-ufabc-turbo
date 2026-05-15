@@ -112,11 +112,11 @@ export const services: ServiceData[] = [
         quote: "Esta empresa cliente seguiu conosco em um processo de fidelização e nos contratou para 6 projetos no total.",
       },
       {
-        client: "Indústria Alimentícia",
-        segment: "Produção · ABC Paulista",
-        result: "Aumento de 28% na produtividade do chão de fábrica em 90 dias.",
-        metric: "+28%",
-        quote: "A UFABC Jr. trouxe um olhar técnico que nossa equipe interna não tinha.",
+        client: "Lady Tecelagem",
+        segment: "Empresa do ramo de vestuários",
+        result: "​Coeficiente de satisfação do cliente, medido de 0 a 100%.",
+        metric: "100%",
+        quote: "Empresa familiar com 80 anos de mercado. Mapeamos 4 áreas da sua indústria, identificando gargalos processuais e aplicando melhorias que otimizaram a produção.",
       },
       {
         client: "Clínica de Saúde",
