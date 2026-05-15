@@ -49,7 +49,7 @@ export const Hero = ({ onScrollToServices, onCTA }: HeroProps) => {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="mt-8 flex flex-wrap items-center justify-center gap-3"
         >
-          <Button variant="cta" size="lg" onClick={onScrollToServices}>
+          <Button variant="cta" size="lg" onClick={onCTA ?? onScrollToServices}>
             Diagnóstico gratuito <ArrowRight className="w-4 h-4 ml-1" />
           </Button>
           <Button variant="ghost" size="lg" onClick={onScrollToServices}>
