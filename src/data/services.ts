@@ -140,7 +140,7 @@ export const services: ServiceData[] = [
     eyebrow: "Serviço 02 — Estratégia",
     Icon: Target,
     hero: {
-      headline: "Você está tomando decisões estratégicas sem dados confiáveis de mercado?",
+      headline: "Você está tomando decisões estratégicas sem informações confiáveis do mercado?",
       subheadline:
         "Entenda seu público, seus concorrentes e as oportunidades reais do seu setor para construir estratégias mais assertivas.",
       cta: "Descubra oportunidades no mercado",
