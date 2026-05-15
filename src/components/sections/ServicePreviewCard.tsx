@@ -49,7 +49,7 @@ export const ServicePreviewCard = ({
         <h3 className="font-display text-2xl md:text-3xl font-medium leading-[1.1] text-balance mb-3">
           {tab}
         </h3>
-        <p className="text-sm md:text-base text-muted-foreground leading-relaxed mb-6 line-clamp-3">
+        <p className="text-sm md:text-base text-muted-foreground leading-relaxed mb-6 text-justify">
           {subheadline}
         </p>
 
