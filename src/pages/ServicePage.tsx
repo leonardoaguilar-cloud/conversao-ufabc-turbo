@@ -11,7 +11,10 @@ import { CTASection } from "@/components/sections/CTASection";
 import { services } from "@/data/services";
 
 const ServicePage = () => {
-  const { id } = useParams();
+  const params = useParams();
+  const location = useLocation();
+  const idFromPath = location.pathname.replace(/^\//, "").split("/").pop();
+  const id = params.id ?? idFromPath;
   const ctaRef = useRef<HTMLDivElement>(null);
   const service = services.find((s) => s.id === id);
 
