@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { Link, Navigate, useParams } from "react-router-dom";
+import { Link, Navigate, useLocation, useParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowLeft } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
@@ -11,7 +11,10 @@ import { CTASection } from "@/components/sections/CTASection";
 import { services } from "@/data/services";
 
 const ServicePage = () => {
-  const { id } = useParams();
+  const params = useParams();
+  const location = useLocation();
+  const idFromPath = location.pathname.replace(/^\//, "").split("/").pop();
+  const id = params.id ?? idFromPath;
   const ctaRef = useRef<HTMLDivElement>(null);
   const service = services.find((s) => s.id === id);
 
@@ -102,7 +105,7 @@ const ServicePage = () => {
                 .map((s) => (
                   <Link
                     key={s.id}
-                    to={`/servicos/${s.id}`}
+                    to={`/${s.id}`}
                     className="group flex items-start gap-5 rounded-2xl border border-border bg-card p-6 md:p-7 transition-all hover:-translate-y-0.5 hover:border-foreground/40 hover:shadow-card"
                   >
                     <div className="w-11 h-11 rounded-xl bg-ink text-lime flex items-center justify-center shrink-0">

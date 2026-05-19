@@ -31,7 +31,7 @@ export const ServicePreviewCard = ({
       transition={{ duration: 0.5, delay: index * 0.08 }}
     >
       <Link
-        to={`/servicos/${id}`}
+        to={`/${id}`}
         className="group relative flex h-full flex-col rounded-2xl border border-border bg-card p-7 md:p-8 shadow-card transition-all hover:-translate-y-1 hover:border-foreground/40 hover:shadow-lg"
       >
         <div className="flex items-start justify-between mb-6">

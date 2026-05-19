@@ -31,9 +31,9 @@ export const Navbar = ({ onCTA }: NavbarProps) => {
 
         <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-foreground/80">
           <a href="/#top" className="transition-colors text-lime">Início</a>
-          <a href="#servicos" className="transition-colors text-lime">Serviços</a>
-          <a href="#sobre" className="transition-colors text-lime">Sobre nós</a>
-          <a href="#contato" className="transition-colors text-lime">Contato</a>
+          <a href="/#servicos" className="transition-colors text-lime">Serviços</a>
+          <a href="/#sobre" className="transition-colors text-lime">Sobre nós</a>
+          <a href="/#contato" className="transition-colors text-lime">Contato</a>
         </nav>
 
         <Button variant="cta" size="default" onClick={onCTA}>
