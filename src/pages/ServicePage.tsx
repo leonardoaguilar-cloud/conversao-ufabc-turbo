@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { Link, Navigate, useParams } from "react-router-dom";
+import { Link, Navigate, useLocation, useParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowLeft } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
