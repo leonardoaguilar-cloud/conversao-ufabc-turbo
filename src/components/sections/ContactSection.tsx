@@ -21,6 +21,7 @@ export const ContactSection = () => {
   const [form, setForm] = useState({
     name: "",
     email: "",
+    whatsapp: "",
     company: "",
     service: "",
     message: "",
@@ -109,7 +110,7 @@ export const ContactSection = () => {
                     className="mt-6"
                     onClick={() => {
                       setSubmitted(false);
-                      setForm({ name: "", email: "", company: "", service: "", message: "" });
+                      setForm({ name: "", email: "", whatsapp: "", company: "", service: "", message: "" });
                     }}
                   >
                     Enviar outra mensagem
@@ -147,6 +148,16 @@ export const ContactSection = () => {
 
                   <div className="grid sm:grid-cols-2 gap-5">
                     <div className="space-y-2">
+                      <Label htmlFor="whatsapp">WhatsApp</Label>
+                      <Input
+                        id="whatsapp"
+                        type="tel"
+                        placeholder="(11) 99999-9999"
+                        value={form.whatsapp}
+                        onChange={update("whatsapp")}
+                      />
+                    </div>
+                    <div className="space-y-2">
                       <Label htmlFor="company">Empresa</Label>
                       <Input
                         id="company"
@@ -155,27 +166,28 @@ export const ContactSection = () => {
                         onChange={update("company")}
                       />
                     </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="service">
-                        Serviço de interesse <span className="text-lime">*</span>
-                      </Label>
-                      <Select
-                        value={form.service}
-                        onValueChange={(v) => setForm((f) => ({ ...f, service: v }))}
-                      >
-                        <SelectTrigger id="service">
-                          <SelectValue placeholder="Selecione um serviço" />
-                        </SelectTrigger>
-                        <SelectContent>
-                          {services.map((s) => (
-                            <SelectItem key={s.id} value={s.id}>
-                              {s.tab}
-                            </SelectItem>
-                          ))}
-                          <SelectItem value="indeciso">Ainda não sei / quero conversar</SelectItem>
-                        </SelectContent>
-                      </Select>
-                    </div>
+                  </div>
+
+                  <div className="space-y-2">
+                    <Label htmlFor="service">
+                      Serviço de interesse <span className="text-lime">*</span>
+                    </Label>
+                    <Select
+                      value={form.service}
+                      onValueChange={(v) => setForm((f) => ({ ...f, service: v }))}
+                    >
+                      <SelectTrigger id="service">
+                        <SelectValue placeholder="Selecione um serviço" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        {services.map((s) => (
+                          <SelectItem key={s.id} value={s.id}>
+                            {s.tab}
+                          </SelectItem>
+                        ))}
+                        <SelectItem value="indeciso">Ainda não sei / quero conversar</SelectItem>
+                      </SelectContent>
+                    </Select>
                   </div>
 
                   <div className="space-y-2">
