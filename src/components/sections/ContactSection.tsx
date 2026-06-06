@@ -166,27 +166,28 @@ export const ContactSection = () => {
                         onChange={update("company")}
                       />
                     </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="service">
-                        Serviço de interesse <span className="text-lime">*</span>
-                      </Label>
-                      <Select
-                        value={form.service}
-                        onValueChange={(v) => setForm((f) => ({ ...f, service: v }))}
-                      >
-                        <SelectTrigger id="service">
-                          <SelectValue placeholder="Selecione um serviço" />
-                        </SelectTrigger>
-                        <SelectContent>
-                          {services.map((s) => (
-                            <SelectItem key={s.id} value={s.id}>
-                              {s.tab}
-                            </SelectItem>
-                          ))}
-                          <SelectItem value="indeciso">Ainda não sei / quero conversar</SelectItem>
-                        </SelectContent>
-                      </Select>
-                    </div>
+                  </div>
+
+                  <div className="space-y-2">
+                    <Label htmlFor="service">
+                      Serviço de interesse <span className="text-lime">*</span>
+                    </Label>
+                    <Select
+                      value={form.service}
+                      onValueChange={(v) => setForm((f) => ({ ...f, service: v }))}
+                    >
+                      <SelectTrigger id="service">
+                        <SelectValue placeholder="Selecione um serviço" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        {services.map((s) => (
+                          <SelectItem key={s.id} value={s.id}>
+                            {s.tab}
+                          </SelectItem>
+                        ))}
+                        <SelectItem value="indeciso">Ainda não sei / quero conversar</SelectItem>
+                      </SelectContent>
+                    </Select>
                   </div>
 
                   <div className="space-y-2">
