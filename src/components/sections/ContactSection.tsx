@@ -21,6 +21,7 @@ export const ContactSection = () => {
   const [form, setForm] = useState({
     name: "",
     email: "",
+    whatsapp: "",
     company: "",
     service: "",
     message: "",
