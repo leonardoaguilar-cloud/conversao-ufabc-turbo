@@ -1,0 +1,10 @@
+# UFABC Jr.
+
+> Empresa Júnior da UFABC. Consultoria em mapeamento de processos, pesquisa de mercado e análise de dados para empresas que querem crescer com clareza.
+
+## Pages
+
+- [Início](/): Visão geral da consultoria, serviços e diagnóstico gratuito.
+- [Mapeamento de Processos](/processos): Identificação de gargalos e otimização operacional.
+- [Pesquisa de Mercado](/mercado): Análise de público, concorrência e oportunidades.
+- [Análise de Dados](/dados): Dashboards, automações e inteligência de dados.
