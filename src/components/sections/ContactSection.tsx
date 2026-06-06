@@ -110,7 +110,7 @@ export const ContactSection = () => {
                     className="mt-6"
                     onClick={() => {
                       setSubmitted(false);
-                      setForm({ name: "", email: "", company: "", service: "", message: "" });
+                      setForm({ name: "", email: "", whatsapp: "", company: "", service: "", message: "" });
                     }}
                   >
                     Enviar outra mensagem
