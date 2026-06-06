@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { Helmet } from "react-helmet-async";
 import { Link, Navigate, useLocation, useParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowLeft } from "lucide-react";
@@ -30,6 +31,23 @@ const ServicePage = () => {
 
   return (
     <div id="top" className="min-h-screen bg-background text-foreground">
+      <Helmet>
+        <title>{`${service.tab} | UFABC Jr.`}</title>
+        <meta name="description" content={service.hero.subheadline.slice(0, 160)} />
+        <link rel="canonical" href={`https://ufabcjr.com.br/${service.id}`} />
+        <meta property="og:title" content={`${service.tab} | UFABC Jr.`} />
+        <meta property="og:description" content={service.hero.subheadline.slice(0, 160)} />
+        <meta property="og:url" content={`https://ufabcjr.com.br/${service.id}`} />
+        <meta property="og:type" content="website" />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Service",
+          name: service.tab,
+          description: service.hero.subheadline,
+          provider: { "@type": "Organization", name: "UFABC Jr.", url: "https://ufabcjr.com.br" },
+          url: `https://ufabcjr.com.br/${service.id}`,
+        })}</script>
+      </Helmet>
       <Navbar onCTA={scrollToCTA} />
 
       <main>

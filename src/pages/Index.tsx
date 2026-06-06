@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
@@ -61,6 +62,14 @@ const Index = () => {
 
   return (
     <div id="top" className="min-h-screen bg-background text-foreground">
+      <Helmet>
+        <title>UFABC Jr. — Consultoria que destrava crescimento</title>
+        <meta name="description" content="Consultoria em mapeamento de processos, pesquisa de mercado e análise de dados. Diagnóstico gratuito com a Empresa Júnior da UFABC." />
+        <link rel="canonical" href="https://ufabcjr.com.br/" />
+        <meta property="og:title" content="UFABC Jr. — Consultoria que destrava crescimento" />
+        <meta property="og:description" content="Mapeamento de processos, pesquisa de mercado e análise de dados. Diagnóstico gratuito." />
+        <meta property="og:url" content="https://ufabcjr.com.br/" />
+      </Helmet>
       <Navbar onCTA={scrollToCTA} />
 
       <main>
