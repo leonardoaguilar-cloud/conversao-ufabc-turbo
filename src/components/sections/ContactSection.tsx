@@ -148,6 +148,16 @@ export const ContactSection = () => {
 
                   <div className="grid sm:grid-cols-2 gap-5">
                     <div className="space-y-2">
+                      <Label htmlFor="whatsapp">WhatsApp</Label>
+                      <Input
+                        id="whatsapp"
+                        type="tel"
+                        placeholder="(11) 99999-9999"
+                        value={form.whatsapp}
+                        onChange={update("whatsapp")}
+                      />
+                    </div>
+                    <div className="space-y-2">
                       <Label htmlFor="company">Empresa</Label>
                       <Input
                         id="company"
