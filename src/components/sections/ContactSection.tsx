@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -16,7 +17,7 @@ import { toast } from "@/hooks/use-toast";
 import { services } from "@/data/services";
 
 export const ContactSection = () => {
-  const [submitted, setSubmitted] = useState(false);
+  const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
   const [form, setForm] = useState({
     name: "",
@@ -33,23 +34,18 @@ export const ContactSection = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!form.name || !form.email || !form.service) {
+    if (!form.name || !form.email || !form.whatsapp || !form.service) {
       toast({
         title: "Preencha os campos obrigatórios",
-        description: "Nome, e-mail e serviço de interesse são necessários.",
+        description: "Nome, e-mail, WhatsApp e serviço de interesse são necessários.",
         variant: "destructive",
       });
       return;
     }
     setLoading(true);
-    // Simulação de envio — conecte ao Lovable Cloud para persistir os leads.
     setTimeout(() => {
       setLoading(false);
-      setSubmitted(true);
-      toast({
-        title: "Recebemos seu contato!",
-        description: "Um consultor vai responder em até 1 dia útil.",
-      });
+      navigate("/obrigado");
     }, 600);
   };
 
@@ -93,125 +89,103 @@ export const ContactSection = () => {
             className="lg:col-span-7"
           >
             <div className="rounded-3xl border border-border bg-card p-6 md:p-10 shadow-card">
-              {submitted ? (
-                <div className="flex flex-col items-center text-center py-10">
-                  <div className="w-14 h-14 rounded-full bg-lime/15 text-lime flex items-center justify-center mb-5">
-                    <CheckCircle2 className="w-7 h-7" strokeWidth={2} />
-                  </div>
-                  <h3 className="font-display text-2xl md:text-3xl font-medium mb-3">
-                    Recebemos seu contato!
-                  </h3>
-                  <p className="text-muted-foreground max-w-md">
-                    Um dos nossos consultores entra em contato em até 1 dia útil pelo e-mail{" "}
-                    <span className="text-foreground font-medium">{form.email}</span>.
-                  </p>
-                  <Button
-                    variant="ghost"
-                    className="mt-6"
-                    onClick={() => {
-                      setSubmitted(false);
-                      setForm({ name: "", email: "", whatsapp: "", company: "", service: "", message: "" });
-                    }}
-                  >
-                    Enviar outra mensagem
-                  </Button>
-                </div>
-              ) : (
-                <form onSubmit={handleSubmit} className="space-y-5">
-                  <div className="grid sm:grid-cols-2 gap-5">
-                    <div className="space-y-2">
-                      <Label htmlFor="name">
-                        Nome <span className="text-lime">*</span>
-                      </Label>
-                      <Input
-                        id="name"
-                        placeholder="Como podemos te chamar?"
-                        value={form.name}
-                        onChange={update("name")}
-                        required
-                      />
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="email">
-                        E-mail <span className="text-lime">*</span>
-                      </Label>
-                      <Input
-                        id="email"
-                        type="email"
-                        placeholder="voce@empresa.com"
-                        value={form.email}
-                        onChange={update("email")}
-                        required
-                      />
-                    </div>
-                  </div>
-
-                  <div className="grid sm:grid-cols-2 gap-5">
-                    <div className="space-y-2">
-                      <Label htmlFor="whatsapp">WhatsApp</Label>
-                      <Input
-                        id="whatsapp"
-                        type="tel"
-                        placeholder="(11) 99999-9999"
-                        value={form.whatsapp}
-                        onChange={update("whatsapp")}
-                      />
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="company">Empresa</Label>
-                      <Input
-                        id="company"
-                        placeholder="Nome da sua empresa"
-                        value={form.company}
-                        onChange={update("company")}
-                      />
-                    </div>
-                  </div>
-
+              <form onSubmit={handleSubmit} className="space-y-5">
+                <div className="grid sm:grid-cols-2 gap-5">
                   <div className="space-y-2">
-                    <Label htmlFor="service">
-                      Serviço de interesse <span className="text-lime">*</span>
+                    <Label htmlFor="name">
+                      Nome <span className="text-lime">*</span>
                     </Label>
-                    <Select
-                      value={form.service}
-                      onValueChange={(v) => setForm((f) => ({ ...f, service: v }))}
-                    >
-                      <SelectTrigger id="service">
-                        <SelectValue placeholder="Selecione um serviço" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        {services.map((s) => (
-                          <SelectItem key={s.id} value={s.id}>
-                            {s.tab}
-                          </SelectItem>
-                        ))}
-                        <SelectItem value="indeciso">Ainda não sei / quero conversar</SelectItem>
-                      </SelectContent>
-                    </Select>
-                  </div>
-
-                  <div className="space-y-2">
-                    <Label htmlFor="message">Conte um pouco sobre o seu desafio</Label>
-                    <Textarea
-                      id="message"
-                      placeholder="O que está travando hoje? O que você gostaria de resolver?"
-                      rows={5}
-                      value={form.message}
-                      onChange={update("message")}
+                    <Input
+                      id="name"
+                      placeholder="Como podemos te chamar?"
+                      value={form.name}
+                      onChange={update("name")}
+                      required
                     />
                   </div>
-
-                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-2">
-                    <p className="text-xs text-muted-foreground">
-                      Ao enviar, você concorda em receber um retorno do nosso time. Não compartilhamos seus dados.
-                    </p>
-                    <Button type="submit" variant="cta" size="lg" disabled={loading}>
-                      {loading ? "Enviando..." : "Enviar mensagem"}
-                      {!loading && <ArrowRight className="w-4 h-4 ml-1" />}
-                    </Button>
+                  <div className="space-y-2">
+                    <Label htmlFor="email">
+                      E-mail <span className="text-lime">*</span>
+                    </Label>
+                    <Input
+                      id="email"
+                      type="email"
+                      placeholder="voce@empresa.com"
+                      value={form.email}
+                      onChange={update("email")}
+                      required
+                    />
                   </div>
-                </form>
-              )}
+                </div>
+
+                <div className="grid sm:grid-cols-2 gap-5">
+                  <div className="space-y-2">
+                    <Label htmlFor="whatsapp">
+                      WhatsApp <span className="text-lime">*</span>
+                    </Label>
+                    <Input
+                      id="whatsapp"
+                      type="tel"
+                      placeholder="(11) 99999-9999"
+                      value={form.whatsapp}
+                      onChange={update("whatsapp")}
+                      required
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="company">Empresa</Label>
+                    <Input
+                      id="company"
+                      placeholder="Nome da sua empresa"
+                      value={form.company}
+                      onChange={update("company")}
+                    />
+                  </div>
+                </div>
+
+                <div className="space-y-2">
+                  <Label htmlFor="service">
+                    Serviço de interesse <span className="text-lime">*</span>
+                  </Label>
+                  <Select
+                    value={form.service}
+                    onValueChange={(v) => setForm((f) => ({ ...f, service: v }))}
+                  >
+                    <SelectTrigger id="service">
+                      <SelectValue placeholder="Selecione um serviço" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      {services.map((s) => (
+                        <SelectItem key={s.id} value={s.id}>
+                          {s.tab}
+                        </SelectItem>
+                      ))}
+                      <SelectItem value="indeciso">Ainda não sei / quero conversar</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
+
+                <div className="space-y-2">
+                  <Label htmlFor="message">Conte um pouco sobre o seu desafio</Label>
+                  <Textarea
+                    id="message"
+                    placeholder="O que está travando hoje? O que você gostaria de resolver?"
+                    rows={5}
+                    value={form.message}
+                    onChange={update("message")}
+                  />
+                </div>
+
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-2">
+                  <p className="text-xs text-muted-foreground">
+                    Ao enviar, você concorda em receber um retorno do nosso time. Não compartilhamos seus dados.
+                  </p>
+                  <Button type="submit" variant="cta" size="lg" disabled={loading}>
+                    {loading ? "Enviando..." : "Enviar mensagem"}
+                    {!loading && <ArrowRight className="w-4 h-4 ml-1" />}
+                  </Button>
+                </div>
+              </form>
             </div>
           </motion.div>
         </div>
