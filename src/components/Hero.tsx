@@ -41,7 +41,10 @@ export const Hero = ({ onScrollToServices, onCTA }: HeroProps) => {
           className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium leading-[1.05] tracking-tight text-balance max-w-4xl mx-auto"
         >
           Soluções{" "}
-          <span className="relative inline-block align-baseline">
+          <span className="relative inline-grid align-baseline">
+            <span className="invisible whitespace-nowrap px-1" aria-hidden="true">
+              {ALTERNATING_WORDS.reduce((a, b) => (a.length > b.length ? a : b))}
+            </span>
             <AnimatePresence mode="wait">
               <motion.em
                 key={ALTERNATING_WORDS[wordIndex]}
@@ -54,7 +57,7 @@ export const Hero = ({ onScrollToServices, onCTA }: HeroProps) => {
                   damping: 22,
                   mass: 0.8,
                 }}
-                className="not-italic inline-block text-lime font-semibold"
+                className="not-italic col-start-1 row-start-1 flex items-center justify-center text-lime font-semibold whitespace-nowrap px-1"
               >
                 {ALTERNATING_WORDS[wordIndex]}
               </motion.em>
