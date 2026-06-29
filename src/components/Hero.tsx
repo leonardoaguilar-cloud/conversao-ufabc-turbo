@@ -45,10 +45,15 @@ export const Hero = ({ onScrollToServices, onCTA }: HeroProps) => {
             <AnimatePresence mode="wait">
               <motion.em
                 key={ALTERNATING_WORDS[wordIndex]}
-                initial={{ opacity: 0, y: 8 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -8 }}
-                transition={{ duration: 0.6, ease: "easeOut" }}
+                initial={{ opacity: 0, y: 16, scale: 0.96, filter: "blur(4px)" }}
+                animate={{ opacity: 1, y: 0, scale: 1, filter: "blur(0px)" }}
+                exit={{ opacity: 0, y: -16, scale: 1.02, filter: "blur(4px)" }}
+                transition={{
+                  type: "spring",
+                  stiffness: 120,
+                  damping: 22,
+                  mass: 0.8,
+                }}
                 className="not-italic inline-block text-lime font-semibold"
               >
                 {ALTERNATING_WORDS[wordIndex]}
