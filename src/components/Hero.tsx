@@ -8,7 +8,7 @@ interface HeroProps {
   onCTA?: () => void;
 }
 
-const ALTERNATING_WORDS = ["inteligentes", "acessíveis"];
+const ALTERNATING_WORDS = ["acessíveis", "inteligentes", "rápidas"];
 
 export const Hero = ({ onScrollToServices, onCTA }: HeroProps) => {
   const [wordIndex, setWordIndex] = useState(0);
@@ -38,11 +38,11 @@ export const Hero = ({ onScrollToServices, onCTA }: HeroProps) => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.1 }}
-          className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium leading-[1.05] tracking-tight text-balance max-w-4xl mx-auto"
+          className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium leading-[1.0] tracking-tight text-balance max-w-4xl mx-auto"
         >
           Soluções{" "}
-          <span className="relative inline-grid align-baseline">
-            <span className="invisible whitespace-nowrap px-1" aria-hidden="true">
+          <span className="relative inline-grid align-baseline leading-none">
+            <span className="invisible whitespace-nowrap px-1 leading-none" aria-hidden="true">
               {ALTERNATING_WORDS.reduce((a, b) => (a.length > b.length ? a : b))}
             </span>
             <AnimatePresence mode="wait">
@@ -57,13 +57,13 @@ export const Hero = ({ onScrollToServices, onCTA }: HeroProps) => {
                   damping: 22,
                   mass: 0.8,
                 }}
-                className="not-italic col-start-1 row-start-1 flex items-center justify-center text-lime font-semibold whitespace-nowrap px-1"
+                className="not-italic col-start-1 row-start-1 flex items-center justify-center text-lime font-semibold whitespace-nowrap px-1 leading-none"
               >
                 {ALTERNATING_WORDS[wordIndex]}
               </motion.em>
             </AnimatePresence>
           </span>{" "}
-          e rápidas para crescer seu negócio
+          para o seu negócio
         </motion.h1>
 
         <motion.p
