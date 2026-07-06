@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://ufabcjr.com.br/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://ufabcjr.com.br/processos</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://ufabcjr.com.br/mercado</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://ufabcjr.com.br/dados</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://conversao-ufabc-turbo.lovable.app/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://conversao-ufabc-turbo.lovable.app/processos</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://conversao-ufabc-turbo.lovable.app/mercado</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://conversao-ufabc-turbo.lovable.app/dados</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>
