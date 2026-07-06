@@ -38,7 +38,7 @@ export const Hero = ({ onScrollToServices, onCTA }: HeroProps) => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.1 }}
-          className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium leading-[1.0] tracking-tight text-balance max-w-4xl mx-auto"
+          className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium leading-[0.75] tracking-tight text-balance max-w-4xl mx-auto"
         >
           Soluções{" "}
           <span className="relative inline-grid align-baseline leading-none">
@@ -57,7 +57,7 @@ export const Hero = ({ onScrollToServices, onCTA }: HeroProps) => {
                   damping: 22,
                   mass: 0.8,
                 }}
-                className="not-italic col-start-1 row-start-1 flex items-center justify-center text-lime font-semibold whitespace-nowrap px-1 leading-none"
+                className="not-italic absolute inset-0 flex items-center justify-center text-lime font-semibold whitespace-nowrap px-1 leading-none"
               >
                 {ALTERNATING_WORDS[wordIndex]}
               </motion.em>
