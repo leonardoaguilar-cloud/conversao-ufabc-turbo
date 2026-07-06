@@ -57,7 +57,7 @@ export const Hero = ({ onScrollToServices, onCTA }: HeroProps) => {
                   damping: 22,
                   mass: 0.8,
                 }}
-                className="not-italic col-start-1 row-start-1 flex items-center justify-center text-lime font-semibold whitespace-nowrap px-1 leading-none"
+                className="not-italic absolute inset-0 flex items-center justify-center text-lime font-semibold whitespace-nowrap px-1 leading-none"
               >
                 {ALTERNATING_WORDS[wordIndex]}
               </motion.em>
