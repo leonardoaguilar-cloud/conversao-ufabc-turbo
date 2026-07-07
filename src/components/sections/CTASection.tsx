@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -14,15 +13,15 @@ interface CTASectionProps {
 }
 
 export const CTASection = ({ service, headline, subheadline }: CTASectionProps) => {
-  const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-      navigate("/obrigado");
+      setSubmitted(true);
     }, 600);
   };
 
