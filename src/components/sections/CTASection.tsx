@@ -73,52 +73,76 @@ export const CTASection = ({ service, headline, subheadline }: CTASectionProps) 
             transition={{ duration: 0.6, delay: 0.15 }}
             className="bg-card rounded-3xl p-8 md:p-10 shadow-editorial border border-border"
           >
-            <form onSubmit={handleSubmit} className="space-y-5">
-              <div className="mb-2">
-                <h3 className="font-display text-2xl font-medium mb-1">Solicite seu diagnóstico</h3>
-                <p className="text-sm text-muted-foreground">Leva menos de 60 segundos.</p>
-              </div>
-
-              <div className="space-y-1.5">
-                <Label htmlFor="name">Nome completo <span className="text-lime">*</span></Label>
-                <Input id="name" required placeholder="Seu nome" className="h-11" />
-              </div>
-
-              <div className="grid sm:grid-cols-2 gap-4">
-                <div className="space-y-1.5">
-                  <Label htmlFor="email">E-mail corporativo <span className="text-lime">*</span></Label>
-                  <Input id="email" type="email" required placeholder="voce@empresa.com" className="h-11" />
+            {submitted ? (
+              <motion.div
+                initial={{ opacity: 0, y: 12 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4 }}
+                className="text-center py-6"
+                role="status"
+                aria-live="polite"
+              >
+                <div className="w-16 h-16 rounded-full bg-lime/15 text-lime flex items-center justify-center mx-auto mb-5">
+                  <CheckCircle2 className="w-8 h-8" strokeWidth={2} />
                 </div>
-                <div className="space-y-1.5">
-                  <Label htmlFor="phone">WhatsApp <span className="text-lime">*</span></Label>
-                  <Input id="phone" type="tel" required placeholder="(11) 99999-9999" className="h-11" />
+                <h3 className="font-display text-2xl md:text-3xl font-medium mb-2">
+                  Agradecemos seu contato
+                </h3>
+                <p className="text-base text-foreground/80 mb-1">
+                  Mensagem enviada com sucesso!
+                </p>
+                <p className="text-sm text-muted-foreground">
+                  Nosso time responde em até 1 dia útil.
+                </p>
+              </motion.div>
+            ) : (
+              <form onSubmit={handleSubmit} className="space-y-5">
+                <div className="mb-2">
+                  <h3 className="font-display text-2xl font-medium mb-1">Solicite seu diagnóstico</h3>
+                  <p className="text-sm text-muted-foreground">Leva menos de 60 segundos.</p>
                 </div>
-              </div>
 
-              <div className="space-y-1.5">
-                <Label htmlFor="company">Empresa <span className="text-lime">*</span></Label>
-                <Input id="company" required placeholder="Nome da empresa" className="h-11" />
-              </div>
+                <div className="space-y-1.5">
+                  <Label htmlFor="name">Nome completo <span className="text-lime">*</span></Label>
+                  <Input id="name" required placeholder="Seu nome" className="h-11" />
+                </div>
 
-              <div className="space-y-1.5">
-                <Label htmlFor="challenge">Qual o principal desafio hoje?</Label>
-                <Textarea
-                  id="challenge"
-                  rows={3}
-                  placeholder={`Conte rapidamente onde dói em ${service.toLowerCase()}...`}
-                  className="resize-none"
-                />
-              </div>
+                <div className="grid sm:grid-cols-2 gap-4">
+                  <div className="space-y-1.5">
+                    <Label htmlFor="email">E-mail corporativo <span className="text-lime">*</span></Label>
+                    <Input id="email" type="email" required placeholder="voce@empresa.com" className="h-11" />
+                  </div>
+                  <div className="space-y-1.5">
+                    <Label htmlFor="phone">WhatsApp <span className="text-lime">*</span></Label>
+                    <Input id="phone" type="tel" required placeholder="(11) 99999-9999" className="h-11" />
+                  </div>
+                </div>
 
-              <Button type="submit" variant="cta" size="xl" className="w-full" disabled={loading}>
-                {loading ? "Enviando..." : "Quero meu diagnóstico gratuito"}
-                <ArrowRight className="w-5 h-5 ml-1" />
-              </Button>
+                <div className="space-y-1.5">
+                  <Label htmlFor="company">Empresa <span className="text-lime">*</span></Label>
+                  <Input id="company" required placeholder="Nome da empresa" className="h-11" />
+                </div>
 
-              <p className="text-xs text-muted-foreground text-center">
-                🔒 Seus dados são confidenciais. Nada de spam, prometido.
-              </p>
-            </form>
+                <div className="space-y-1.5">
+                  <Label htmlFor="challenge">Qual o principal desafio hoje?</Label>
+                  <Textarea
+                    id="challenge"
+                    rows={3}
+                    placeholder={`Conte rapidamente onde dói em ${service.toLowerCase()}...`}
+                    className="resize-none"
+                  />
+                </div>
+
+                <Button type="submit" variant="cta" size="xl" className="w-full" disabled={loading}>
+                  {loading ? "Enviando..." : "Quero meu diagnóstico gratuito"}
+                  <ArrowRight className="w-5 h-5 ml-1" />
+                </Button>
+
+                <p className="text-xs text-muted-foreground text-center">
+                  🔒 Seus dados são confidenciais. Nada de spam, prometido.
+                </p>
+              </form>
+            )}
           </motion.div>
         </div>
       </div>
