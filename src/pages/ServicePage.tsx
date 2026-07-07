@@ -29,23 +29,49 @@ const ServicePage = () => {
     ctaRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
+  const seoByService: Record<string, { title: string; description: string }> = {
+    processos: {
+      title: "Mapeamento de Processos para Empresas | UFABC Jr.",
+      description:
+        "Consultoria de mapeamento e otimização de processos: reduza gargalos, retrabalho e custos com fluxos AS-IS/TO-BE, documentação e implantação.",
+    },
+    mercado: {
+      title: "Pesquisa de Mercado para Empresas | UFABC Jr.",
+      description:
+        "Pesquisa de mercado com dados de público, concorrência e oportunidades reais do setor para decisões estratégicas com menos risco.",
+    },
+    dados: {
+      title: "Análise de Dados e Dashboards para Empresas | UFABC Jr.",
+      description:
+        "Transformamos suas bases de dados em dashboards interativos, análises estatísticas e insights acionáveis para decisões em tempo real.",
+    },
+  };
+  const seo = seoByService[service.id] ?? {
+    title: `${service.tab} | UFABC Jr.`,
+    description: service.hero.subheadline.slice(0, 160),
+  };
+  const canonicalUrl = `https://ufabcjr.com.br/${service.id}`;
+
   return (
     <div id="top" className="min-h-screen bg-background text-foreground">
       <Helmet>
-        <title>{`${service.tab} | UFABC Jr.`}</title>
-        <meta name="description" content={service.hero.subheadline.slice(0, 160)} />
-        <link rel="canonical" href={`https://ufabcjr.com.br/${service.id}`} />
-        <meta property="og:title" content={`${service.tab} | UFABC Jr.`} />
-        <meta property="og:description" content={service.hero.subheadline.slice(0, 160)} />
-        <meta property="og:url" content={`https://ufabcjr.com.br/${service.id}`} />
+        <title>{seo.title}</title>
+        <meta name="description" content={seo.description} />
+        <link rel="canonical" href={canonicalUrl} />
+        <meta property="og:title" content={seo.title} />
+        <meta property="og:description" content={seo.description} />
+        <meta property="og:url" content={canonicalUrl} />
         <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={seo.title} />
+        <meta name="twitter:description" content={seo.description} />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Service",
           name: service.tab,
-          description: service.hero.subheadline,
+          description: seo.description,
           provider: { "@type": "Organization", name: "UFABC Jr.", url: "https://ufabcjr.com.br" },
-          url: `https://ufabcjr.com.br/${service.id}`,
+          url: canonicalUrl,
         })}</script>
       </Helmet>
       <Navbar onCTA={scrollToCTA} />
