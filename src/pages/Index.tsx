@@ -93,7 +93,7 @@ const Index = () => {
                     className="flex h-20 w-56 shrink-0 items-center justify-center rounded-md border border-border bg-background px-8"
                   >
                     {company.logo ? (
-                      <img src={company.logo} alt={company.name} className="max-h-12 w-auto object-contain" />
+                      <img src={company.logo} alt={company.alt} className="max-h-12 w-auto object-contain" />
                     ) : (
                       <span className="font-display text-xl md:text-2xl font-medium tracking-tight text-ink whitespace-nowrap">
                         {company.name}
