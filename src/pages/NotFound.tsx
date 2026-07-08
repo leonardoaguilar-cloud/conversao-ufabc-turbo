@@ -1,5 +1,6 @@
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 
 const NotFound = () => {
   const location = useLocation();
@@ -8,8 +9,26 @@ const NotFound = () => {
     console.error("404 Error: User attempted to access non-existent route:", location.pathname);
   }, [location.pathname]);
 
+  const canonicalUrl = `https://ufabcjr.com.br${location.pathname}`;
+
   return (
     <div className="flex min-h-screen items-center justify-center bg-muted">
+      <Helmet>
+        <title>Página não encontrada (404) | UFABC Jr.</title>
+        <meta
+          name="description"
+          content="A página que você procura não existe ou foi movida. Volte para a home da UFABC Jr. e conheça nossos serviços de consultoria."
+        />
+        <meta name="robots" content="noindex, follow" />
+        <link rel="canonical" href={canonicalUrl} />
+        <meta property="og:title" content="Página não encontrada (404) | UFABC Jr." />
+        <meta
+          property="og:description"
+          content="A página que você procura não existe ou foi movida. Volte para a home da UFABC Jr."
+        />
+        <meta property="og:url" content={canonicalUrl} />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <div className="text-center">
         <h1 className="mb-4 text-4xl font-bold">404</h1>
         <p className="mb-4 text-xl text-muted-foreground">Oops! Page not found</p>

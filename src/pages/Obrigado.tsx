@@ -13,6 +13,10 @@ const Obrigado = () => {
         <meta name="description" content="Recebemos seu contato. Um consultor da UFABC Jr. vai responder em até 1 dia útil." />
         <meta name="robots" content="noindex" />
         <link rel="canonical" href="https://ufabcjr.com.br/obrigado" />
+        <meta property="og:title" content="Obrigado pelo contato | UFABC Jr." />
+        <meta property="og:description" content="Recebemos seu contato. Um consultor da UFABC Jr. responde em até 1 dia útil." />
+        <meta property="og:url" content="https://ufabcjr.com.br/obrigado" />
+        <meta property="og:type" content="website" />
       </Helmet>
       <Navbar onCTA={() => {}} />
 
