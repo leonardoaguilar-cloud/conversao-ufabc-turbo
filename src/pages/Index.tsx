@@ -37,15 +37,15 @@ const previewHighlights: Record<string, string[]> = {
   ],
 };
 
-const trustedCompanies: { name: string; logo?: string }[] = [
-  { name: "Continental", logo: continentalLogo },
-  { name: "Samsung", logo: samsungLogo },
-  { name: "Renova Energia", logo: renovaLogo },
-  { name: "Dasa", logo: dasaLogo },
-  { name: "CAS Tecnologia", logo: casLogo },
-  { name: "Igreja Adventista do Sétimo Dia", logo: adventistaLogo },
-  { name: "Shopper", logo: shopperLogo },
-  { name: "Aperam", logo: aperamLogo },
+const trustedCompanies: { name: string; alt: string; logo?: string }[] = [
+  { name: "Continental", alt: "Logo da Continental", logo: continentalLogo },
+  { name: "Samsung", alt: "Logo da Samsung", logo: samsungLogo },
+  { name: "Renova Energia", alt: "Logo da Renova Energia", logo: renovaLogo },
+  { name: "Dasa", alt: "Logo da Dasa", logo: dasaLogo },
+  { name: "CAS Tecnologia", alt: "Logo da CAS Tecnologia", logo: casLogo },
+  { name: "Igreja Adventista do Sétimo Dia", alt: "Logo da Igreja Adventista do Sétimo Dia", logo: adventistaLogo },
+  { name: "Shopper", alt: "Logo da empresa Shopper", logo: shopperLogo },
+  { name: "Aperam", alt: "Logo da empresa Aperam", logo: aperamLogo },
 ];
 
 const Index = () => {
