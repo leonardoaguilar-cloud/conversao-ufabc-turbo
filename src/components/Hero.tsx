@@ -8,7 +8,7 @@ interface HeroProps {
   onCTA?: () => void;
 }
 
-const ALTERNATING_WORDS = ["acessíveis", "inteligentes", "rápidas"];
+const ALTERNATING_WORDS = ["estratégicas", "inteligentes", "rápidas"];
 
 export const Hero = ({ onScrollToServices, onCTA }: HeroProps) => {
   const [wordIndex, setWordIndex] = useState(0);
