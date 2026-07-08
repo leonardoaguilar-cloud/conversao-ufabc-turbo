@@ -156,7 +156,7 @@ const Index = () => {
                   Sobre a UFABC Jr.
                 </div>
                 <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-medium text-balance leading-[1.05]">
-                  Empresa Júnior da UFABC. <em className="italic text-paper/60">Gente jovem, método sério.</em>
+                  Empresa Júnior da UFABC. <em className="italic text-paper/60">Consultoria especializada em gestão empresarial.</em>
                 </h2>
                 <p className="mt-6 text-lg text-paper/70 max-w-2xl mx-auto leading-relaxed text-justify">
                   A UFABC jr. é uma empresa de consultoria formada por estudantes da Universidade Federal do ABC, conectando conhecimento acadêmico e visão de mercado para desenvolver soluções estratégicas para diversos perfis de empresas. Há mais de 14 anos, atuamos com foco em inovação, análise e resultado, entregando projetos de alta qualidade com uma abordagem acessível, personalizada e orientada ao crescimento dos nossos clientes.
