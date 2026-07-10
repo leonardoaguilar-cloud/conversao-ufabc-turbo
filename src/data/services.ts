@@ -204,7 +204,7 @@ export const services: ServiceData[] = [
         client: "Samsung SDS",
         segment: "Empresa de Tecnologia da Informação",
         result: "Frentes de análise foram feitas sobre o tema da pesquisa.",
-        metric: "Frentes",
+        metric: "5",
         quote: "A Samsung SDS buscava compreender o mercado de Cloud Computing no Brasil e na América Latina para embasar sua estratégia de expansão. A UFABC Jr. realizou uma pesquisa de mercado aprofundada, entregando análises estratégicas que apoiaram a tomada de decisões e o planejamento de ingresso no mercado brasileiro.",
       },
       {
