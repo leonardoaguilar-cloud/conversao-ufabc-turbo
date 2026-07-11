@@ -33,7 +33,7 @@ export const SocialProofSection = ({ cases }: SocialProofProps) => {
           </h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-5">
+      <div className={`grid gap-5 ${cases.length === 2 ? 'md:grid-cols-2 max-w-4xl mx-auto' : cases.length === 1 ? 'md:grid-cols-1 max-w-xl mx-auto' : 'md:grid-cols-3'}`}>
           {cases.map((c, i) => (
             <motion.div
               key={i}
@@ -45,11 +45,11 @@ export const SocialProofSection = ({ cases }: SocialProofProps) => {
             >
               <div className="flex items-baseline gap-2 mb-4">
                 <TrendingUp className="w-5 h-5 text-lime shrink-0" />
-                <div className="font-display text-5xl md:text-6xl font-semibold leading-none tracking-tight">
+                <div className="font-display text-3xl md:text-4xl font-semibold leading-none tracking-tight">
                   {c.metric}
                 </div>
               </div>
-              <p className="font-medium text-foreground mb-5 leading-snug">{c.result}</p>
+              <p className="font-medium text-sm md:text-base text-foreground mb-5 leading-snug">{c.result}</p>
 
               <div className="border-t border-border pt-5 mt-auto">
                 <Quote className="w-5 h-5 text-muted-foreground/40 mb-2" />
