@@ -22,14 +22,10 @@
         function fireThankYouEvent() {
           if (window.location.pathname !== '/obrigado') return;
           if (typeof gtag !== 'function') return;
-          gtag('event', 'conversion', {
-            'send_to': 'AW-XXXXXXXXXX/YYYYYYYYYYY',
-            'event_category': 'lead',
-            'event_label': 'diagnostico_gratuito'
-          });
           gtag('event', 'generate_lead', {
-            'event_category': 'lead',
-            'event_label': 'diagnostico_gratuito'
+            event_category: 'lead',
+            event_label: 'diagnostico_gratuito',
+            page_path: '/obrigado'
           });
         }
         if (document.readyState === 'complete') fireThankYouEvent();
