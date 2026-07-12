@@ -14,15 +14,15 @@ interface CTASectionProps {
 }
 
 export const CTASection = ({ service, headline, subheadline }: CTASectionProps) => {
+  const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
-  const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-      setSubmitted(true);
+      navigate("/obrigado");
     }, 600);
   };
 
