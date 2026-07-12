@@ -74,7 +74,6 @@ export const CTASection = ({ service, headline, subheadline }: CTASectionProps) 
             transition={{ duration: 0.6, delay: 0.15 }}
             className="bg-card rounded-3xl p-8 md:p-10 shadow-editorial border border-border"
           >
-            {(
               
 
               <form onSubmit={handleSubmit} className="space-y-5">
