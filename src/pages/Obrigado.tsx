@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -5,7 +6,30 @@ import { CheckCircle2, ArrowLeft } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Button } from "@/components/ui/button";
 
+declare global {
+  interface Window {
+    gtag?: (...args: unknown[]) => void;
+    dataLayer?: unknown[];
+  }
+}
+
 const Obrigado = () => {
+  useEffect(() => {
+    // Google Ads / GA4 conversion event fired on the thank-you page.
+    // Substitua 'AW-XXXXXXXXXX/YYYYYYYYYYY' pelo seu ID de conversão.
+    if (typeof window !== "undefined" && typeof window.gtag === "function") {
+      window.gtag("event", "conversion", {
+        send_to: "AW-XXXXXXXXXX/YYYYYYYYYYY",
+        event_category: "lead",
+        event_label: "diagnostico_gratuito",
+      });
+      window.gtag("event", "generate_lead", {
+        event_category: "lead",
+        event_label: "diagnostico_gratuito",
+      });
+    }
+  }, []);
+
   return (
     <div className="min-h-screen bg-background text-foreground flex flex-col">
       <Helmet>
