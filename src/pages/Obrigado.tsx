@@ -15,20 +15,16 @@ declare global {
 
 const Obrigado = () => {
   useEffect(() => {
-    // Google Ads / GA4 conversion event fired on the thank-you page.
-    // Substitua 'AW-XXXXXXXXXX/YYYYYYYYYYY' pelo seu ID de conversão.
+    // GA4 conversion event fired on the thank-you page (SPA navigation).
     if (typeof window !== "undefined" && typeof window.gtag === "function") {
-      window.gtag("event", "conversion", {
-        send_to: "AW-XXXXXXXXXX/YYYYYYYYYYY",
-        event_category: "lead",
-        event_label: "diagnostico_gratuito",
-      });
       window.gtag("event", "generate_lead", {
         event_category: "lead",
         event_label: "diagnostico_gratuito",
+        page_path: "/obrigado",
       });
     }
   }, []);
+
 
   return (
     <div className="min-h-screen bg-background text-foreground flex flex-col">
