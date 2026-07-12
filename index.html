@@ -7,6 +7,37 @@
     <meta name="description" content="Consultoria em mapeamento de processos, pesquisa de mercado e análise de dados. Diagnóstico gratuito com a Empresa Júnior da UFABC." />
     <meta name="author" content="UFABC Jr." />
 
+    <!-- Google tag (gtag.js) — substitua G-XXXXXXX pelo seu ID de mensuração (GA4) ou AW-XXXXXXXXXX (Google Ads) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXX');
+    </script>
+
+    <!-- Snippet de evento: página de obrigado (conversão) — disparado em /obrigado após envio do formulário em todas as abas -->
+    <script>
+      (function() {
+        function fireThankYouEvent() {
+          if (window.location.pathname !== '/obrigado') return;
+          if (typeof gtag !== 'function') return;
+          gtag('event', 'conversion', {
+            'send_to': 'AW-XXXXXXXXXX/YYYYYYYYYYY',
+            'event_category': 'lead',
+            'event_label': 'diagnostico_gratuito'
+          });
+          gtag('event', 'generate_lead', {
+            'event_category': 'lead',
+            'event_label': 'diagnostico_gratuito'
+          });
+        }
+        if (document.readyState === 'complete') fireThankYouEvent();
+        else window.addEventListener('load', fireThankYouEvent);
+      })();
+    </script>
+
+
     <meta property="og:title" content="UFABC Jr. — Consultoria que destrava crescimento" />
     <meta property="og:description" content="Mapeamento de processos, pesquisa de mercado e análise de dados. Diagnóstico gratuito." />
     <meta property="og:type" content="website" />
