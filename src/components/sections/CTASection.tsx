@@ -74,29 +74,8 @@ export const CTASection = ({ service, headline, subheadline }: CTASectionProps) 
             transition={{ duration: 0.6, delay: 0.15 }}
             className="bg-card rounded-3xl p-8 md:p-10 shadow-editorial border border-border"
           >
-            {submitted ? (
-              <motion.div
-                initial={{ opacity: 0, y: 12 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4 }}
-                className="text-center py-6"
-                role="status"
-                aria-live="polite"
-              >
-                <div className="w-16 h-16 rounded-full bg-lime/15 text-lime flex items-center justify-center mx-auto mb-5">
-                  <CheckCircle2 className="w-8 h-8" strokeWidth={2} />
-                </div>
-                <h3 className="font-display text-2xl md:text-3xl font-medium mb-2">
-                  Agradecemos seu contato
-                </h3>
-                <p className="text-base text-foreground/80 mb-1">
-                  Mensagem enviada com sucesso!
-                </p>
-                <p className="text-sm text-muted-foreground">
-                  Nosso time responde em até 1 dia útil.
-                </p>
-              </motion.div>
-            ) : (
+            {(
+
               <form onSubmit={handleSubmit} className="space-y-5">
                 <div className="mb-2">
                   <h3 className="font-display text-2xl font-medium mb-1">Solicite seu diagnóstico</h3>
