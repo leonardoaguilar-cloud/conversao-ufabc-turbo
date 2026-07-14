@@ -15,10 +15,11 @@ import {
 } from "@/components/ui/select";
 import { toast } from "@/hooks/use-toast";
 import { services } from "@/data/services";
+import { useWebhookSubmit } from "@/hooks/use-webhook-submit";
 
 export const ContactSection = () => {
   const navigate = useNavigate();
-  const [loading, setLoading] = useState(false);
+  const { submit, loading } = useWebhookSubmit({ origem: "home" });
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -32,7 +33,7 @@ export const ContactSection = () => {
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => setForm((f) => ({ ...f, [field]: e.target.value }));
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!form.name || !form.email || !form.whatsapp || !form.service) {
       toast({
@@ -42,11 +43,15 @@ export const ContactSection = () => {
       });
       return;
     }
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-      navigate("/obrigado");
-    }, 600);
+    await submit({
+      name: form.name,
+      email: form.email,
+      whatsapp: form.whatsapp,
+      company: form.company,
+      service: form.service,
+      message: form.message,
+    });
+    navigate("/obrigado");
   };
 
   return (
@@ -193,3 +198,4 @@ export const ContactSection = () => {
     </section>
   );
 };
+
