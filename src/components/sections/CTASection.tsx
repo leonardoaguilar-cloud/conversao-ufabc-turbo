@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { ArrowRight, Shield, Clock, Gift, CheckCircle2 } from "lucide-react";
+import { useWebhookSubmit } from "@/hooks/use-webhook-submit";
 
 interface CTASectionProps {
   service: string;
@@ -15,15 +15,20 @@ interface CTASectionProps {
 
 export const CTASection = ({ service, headline, subheadline }: CTASectionProps) => {
   const navigate = useNavigate();
-  const [loading, setLoading] = useState(false);
+  const { submit, loading } = useWebhookSubmit({ origem: service });
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-      navigate("/obrigado");
-    }, 600);
+    const formData = new FormData(e.currentTarget);
+    await submit({
+      name: formData.get("name"),
+      email: formData.get("email"),
+      phone: formData.get("phone"),
+      company: formData.get("company"),
+      challenge: formData.get("challenge"),
+      service,
+    });
+    navigate("/obrigado");
   };
 
   return (
@@ -84,29 +89,30 @@ export const CTASection = ({ service, headline, subheadline }: CTASectionProps) 
 
                 <div className="space-y-1.5">
                   <Label htmlFor="name">Nome completo <span className="text-lime">*</span></Label>
-                  <Input id="name" required placeholder="Seu nome" className="h-11" />
+                  <Input id="name" name="name" required placeholder="Seu nome" className="h-11" />
                 </div>
 
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div className="space-y-1.5">
                     <Label htmlFor="email">E-mail corporativo <span className="text-lime">*</span></Label>
-                    <Input id="email" type="email" required placeholder="voce@empresa.com" className="h-11" />
+                    <Input id="email" name="email" type="email" required placeholder="voce@empresa.com" className="h-11" />
                   </div>
                   <div className="space-y-1.5">
                     <Label htmlFor="phone">WhatsApp <span className="text-lime">*</span></Label>
-                    <Input id="phone" type="tel" required placeholder="(11) 99999-9999" className="h-11" />
+                    <Input id="phone" name="phone" type="tel" required placeholder="(11) 99999-9999" className="h-11" />
                   </div>
                 </div>
 
                 <div className="space-y-1.5">
                   <Label htmlFor="company">Empresa <span className="text-lime">*</span></Label>
-                  <Input id="company" required placeholder="Nome da empresa" className="h-11" />
+                  <Input id="company" name="company" required placeholder="Nome da empresa" className="h-11" />
                 </div>
 
                 <div className="space-y-1.5">
                   <Label htmlFor="challenge">Qual o principal desafio hoje?</Label>
                   <Textarea
                     id="challenge"
+                    name="challenge"
                     rows={3}
                     placeholder={`Conte rapidamente onde dói em ${service.toLowerCase()}...`}
                     className="resize-none"
@@ -129,3 +135,4 @@ export const CTASection = ({ service, headline, subheadline }: CTASectionProps) 
     </section>
   );
 };
+
