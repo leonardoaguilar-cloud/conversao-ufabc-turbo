@@ -9,13 +9,14 @@ import { useWebhookSubmit } from "@/hooks/use-webhook-submit";
 
 interface CTASectionProps {
   service: string;
+  serviceId: string;
   headline: string;
   subheadline: string;
 }
 
-export const CTASection = ({ service, headline, subheadline }: CTASectionProps) => {
+export const CTASection = ({ service, serviceId, headline, subheadline }: CTASectionProps) => {
   const navigate = useNavigate();
-  const { submit, loading } = useWebhookSubmit({ origem: service });
+  const { submit, loading } = useWebhookSubmit({ origem: serviceId });
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -135,4 +136,3 @@ export const CTASection = ({ service, headline, subheadline }: CTASectionProps) 
     </section>
   );
 };
-
