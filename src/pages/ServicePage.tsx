@@ -116,6 +116,7 @@ const ServicePage = () => {
           <div id="contato" ref={ctaRef}>
             <CTASection
               service={service.tab}
+              serviceId={service.id}
               headline={service.cta.headline}
               subheadline={service.cta.subheadline}
             />
