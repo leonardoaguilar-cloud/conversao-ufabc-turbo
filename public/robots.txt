@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://conversao-ufabc-turbo.lovable.app/sitemap.xml
+Sitemap: https://ufabcjr.com.br/sitemap.xml
