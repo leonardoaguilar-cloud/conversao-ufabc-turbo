@@ -1,5 +1,5 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -18,11 +18,15 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/servicos/:id" element={<ServicePage />} />
           <Route path="/processos" element={<ServicePage />} />
           <Route path="/mercado" element={<ServicePage />} />
           <Route path="/dados" element={<ServicePage />} />
           <Route path="/obrigado" element={<Obrigado />} />
+          {/* Redirects for legacy /servicos/* URLs */}
+          <Route path="/servicos/processos" element={<Navigate to="/processos" replace />} />
+          <Route path="/servicos/mercado" element={<Navigate to="/mercado" replace />} />
+          <Route path="/servicos/dados" element={<Navigate to="/dados" replace />} />
+          <Route path="/servicos/*" element={<Navigate to="/" replace />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
