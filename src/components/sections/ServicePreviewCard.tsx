@@ -2,6 +2,12 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowUpRight, LucideIcon } from "lucide-react";
 
+const SERVICE_ROUTES: Record<string, string> = {
+  processos: "/mapeamento-de-processos",
+  mercado: "/pesquisa-de-mercado",
+  dados: "/analise-de-dados",
+};
+
 interface ServicePreviewCardProps {
   id: string;
   eyebrow: string;
@@ -31,7 +37,7 @@ export const ServicePreviewCard = ({
       transition={{ duration: 0.5, delay: index * 0.08 }}
     >
       <Link
-        to={`/${id}`}
+        to={SERVICE_ROUTES[id] ?? `/${id}`}
         className="group relative flex h-full flex-col rounded-2xl border border-border bg-card p-7 md:p-8 shadow-card transition-all hover:-translate-y-1 hover:border-foreground/40 hover:shadow-lg"
       >
         <div className="flex items-start justify-between mb-6">

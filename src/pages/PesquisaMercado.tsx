@@ -59,7 +59,7 @@ const PesquisaMercado = () => {
       <main className="pt-20 md:pt-24">
         <ServiceHero
           eyebrow={service.eyebrow}
-          headline={service.hero.headline}
+          headline={"Pesquisa de Mercado que revela seu público, concorrência e oportunidades"}
           subheadline={service.hero.subheadline}
           Icon={service.Icon}
           ctaLabel={service.hero.cta}

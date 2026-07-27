@@ -5,6 +5,6 @@
 ## Pages
 
 - [Início](/): Visão geral da consultoria, serviços e diagnóstico gratuito.
-- [Mapeamento de Processos](/processos): Identificação de gargalos e otimização operacional.
-- [Pesquisa de Mercado](/mercado): Análise de público, concorrência e oportunidades.
-- [Análise de Dados](/dados): Dashboards, automações e inteligência de dados.
+- [Mapeamento de Processos](/mapeamento-de-processos): Identificação de gargalos e otimização operacional.
+- [Pesquisa de Mercado](/pesquisa-de-mercado): Análise de público, concorrência e oportunidades.
+- [Análise de Dados](/analise-de-dados): Dashboards, automações e inteligência de dados.
