@@ -14,22 +14,6 @@
       gtag('js', new Date());
       gtag('config', 'G-5SJDE902BE');
     </script>
-    <!-- Snippet de evento: página de obrigado (conversão) — disparado em /obrigado após envio do formulário em todas as abas -->
-    <script>
-      (function() {
-        function fireThankYouEvent() {
-          if (window.location.pathname !== '/obrigado') return;
-          if (typeof gtag !== 'function') return;
-          gtag('event', 'generate_lead', {
-            event_category: 'lead',
-            event_label: 'diagnostico_gratuito',
-            page_path: '/obrigado'
-          });
-        }
-        if (document.readyState === 'complete') fireThankYouEvent();
-        else window.addEventListener('load', fireThankYouEvent);
-      })();
-    </script>
     <meta property="og:title" content="UFABC Jr. — Consultoria que destrava crescimento" />
     <meta property="og:description" content="Mapeamento de processos, pesquisa de mercado e análise de dados. Diagnóstico gratuito." />
     <meta property="og:type" content="website" />
