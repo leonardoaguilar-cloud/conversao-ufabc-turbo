@@ -124,7 +124,7 @@ const Index = () => {
                 Três frentes. <em className="italic text-muted-foreground">Um único objetivo:</em> destravar seu crescimento.
               </h2>
               <p className="mt-6 text-muted-foreground max-w-2xl mx-auto leading-relaxed text-sm">
-                
+                Da pesquisa de mercado à análise de dados e ao mapeamento de processos, entregamos inteligência prática para decisões mais assertivas.
               </p>
             </motion.div>
 
