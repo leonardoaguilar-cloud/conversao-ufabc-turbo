@@ -8,6 +8,8 @@ import ServicePage from "./pages/ServicePage.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import Obrigado from "./pages/Obrigado.tsx";
 import PesquisaMercado from "./pages/PesquisaMercado.tsx";
+import AnaliseDados from "./pages/AnaliseDados.tsx";
+import MapeamentoProcessos from "./pages/MapeamentoProcessos.tsx";
 
 const queryClient = new QueryClient();
 
@@ -23,6 +25,8 @@ const App = () => (
           <Route path="/mercado" element={<ServicePage />} />
           <Route path="/dados" element={<ServicePage />} />
           <Route path="/pesquisa-de-mercado" element={<PesquisaMercado />} />
+          <Route path="/analise-de-dados" element={<AnaliseDados />} />
+          <Route path="/mapeamento-de-processos" element={<MapeamentoProcessos />} />
           <Route path="/obrigado" element={<Obrigado />} />
 
           {/* Redirects for legacy /servicos/* URLs */}
