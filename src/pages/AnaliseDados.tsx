@@ -59,7 +59,7 @@ const AnaliseDados = () => {
       <main className="pt-20 md:pt-24">
         <ServiceHero
           eyebrow={service.eyebrow}
-          headline={service.hero.headline}
+          headline={"Análise de Dados e dashboards que transformam números em decisões"}
           subheadline={service.hero.subheadline}
           Icon={service.Icon}
           ctaLabel={service.hero.cta}

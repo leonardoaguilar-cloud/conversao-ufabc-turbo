@@ -59,7 +59,7 @@ const MapeamentoProcessos = () => {
       <main className="pt-20 md:pt-24">
         <ServiceHero
           eyebrow={service.eyebrow}
-          headline={service.hero.headline}
+          headline={"Mapeamento de Processos para eliminar gargalos e reduzir custos"}
           subheadline={service.hero.subheadline}
           Icon={service.Icon}
           ctaLabel={service.hero.cta}
