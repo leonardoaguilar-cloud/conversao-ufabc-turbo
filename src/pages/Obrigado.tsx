@@ -15,15 +15,36 @@ declare global {
 
 const Obrigado = () => {
   useEffect(() => {
-    // GA4 conversion event fired on the thank-you page (SPA navigation).
-    if (typeof window !== "undefined" && typeof window.gtag === "function") {
-      window.gtag("event", "generate_lead", {
-        event_category: "lead",
-        event_label: "diagnostico_gratuito",
-        page_path: "/obrigado",
-      });
-    }
+    let cancelled = false;
+    let attempts = 0;
+
+    const fire = () => {
+      if (cancelled) return;
+      if (typeof window !== "undefined" && typeof window.gtag === "function") {
+        window.gtag("event", "generate_lead", {
+          event_category: "lead",
+          event_label: "diagnostico_gratuito",
+          page_path: "/obrigado",
+        });
+        console.log("Lead gerado no GA4");
+        return;
+      }
+      // Aguarda o gtag.js carregar (até ~10s)
+      if (attempts++ < 50) {
+        timer = window.setTimeout(fire, 200);
+      } else {
+        console.warn("gtag não carregou — evento generate_lead não disparado");
+      }
+    };
+
+    let timer = window.setTimeout(fire, 0);
+
+    return () => {
+      cancelled = true;
+      window.clearTimeout(timer);
+    };
   }, []);
+
 
 
   return (
