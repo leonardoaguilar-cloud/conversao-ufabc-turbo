@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { getTrackingParams } from "@/utils/trackingParams";
+
 
 // URL única do webhook do Make. Se precisar trocar no futuro
 // (novo cenário, nova conta, etc), troque só aqui.
@@ -26,6 +28,7 @@ export function useWebhookSubmit(options: WebhookSubmitOptions = {}) {
     setLoading(true);
     setError(null);
     try {
+      const tracking = getTrackingParams();
       const response = await fetch(MAKE_WEBHOOK_URL, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -33,8 +36,16 @@ export function useWebhookSubmit(options: WebhookSubmitOptions = {}) {
           ...data,
           origem: options.origem ?? window.location.pathname,
           enviado_em: new Date().toISOString(),
+          // Dados de rastreamento (UTMs, gclid etc.)
+          utm_source: tracking.utm_source || "",
+          utm_medium: tracking.utm_medium || "",
+          utm_campaign: tracking.utm_campaign || "",
+          palavra_chave: tracking.utm_term || "",
+          id_anuncio: tracking.utm_content || "",
+          gclid: tracking.gclid || "",
         }),
       });
+
 
       if (!response.ok) {
         throw new Error(`Webhook respondeu com status ${response.status}`);
