@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { getTrackingParams } from "@/utils/trackingParams";
+
 
 // URL única do webhook do Make. Se precisar trocar no futuro
 // (novo cenário, nova conta, etc), troque só aqui.
